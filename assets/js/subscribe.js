@@ -14,7 +14,7 @@ $("document").ready(function() {
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "http://antunskuric.890m.com/assets/php/subscribe.php", //Relative or absolute path to response.php file
+            url: "https://antunskuric.com/assets/php/subscribe.php", //Relative or absolute path to response.php file
             data: data,
             success: function(data) {
                 if(data["done"]){
@@ -38,7 +38,7 @@ $("document").ready(function() {
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "http://antunskuric.890m.com/assets/php/subscribe.php", //Relative or absolute path to response.php file
+            url: "https://antunskuric.com/assets/php/subscribe.php", //Relative or absolute path to response.php file
             data: data,
             success: function(data) {
                 if(data["done"]){
@@ -61,7 +61,7 @@ $("document").ready(function() {
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "http://antunskuric.890m.com/assets/php/subscribe.php", //Relative or absolute path to response.php file
+            url: "https://antunskuric.com/assets/php/subscribe.php", //Relative or absolute path to response.php file
             data: data,
             success: function(data) {
                 if(data["done"]){
