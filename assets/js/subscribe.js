@@ -74,3 +74,20 @@ $("document").ready(function() {
         return false;
     });
 });
+
+$(window).on('load',function() {
+    var data = {
+        "from_url":document.referrer,
+        "url" : window.location.href
+    };
+    data = $(this).serialize() + "&" + $.param(data);
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: "https://antunskuric.com/assets/php/visits.php", //Relative or absolute path to response.php file
+        data: data,
+        success: function(data) {
+        }
+    }); 
+    return false; //- da se stranica izvrti
+});

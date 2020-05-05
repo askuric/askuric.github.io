@@ -104,6 +104,7 @@ $message = '';
 foreach ($arrayOfParameters as $key => $value) {
     $message.=$key . ' : ' . $value . "\n";
 }
+$message.=' IP : ' . $_SERVER['REMOTE_ADDR'] . "\n";
 mail($m_address,$arrayOfParameters["action"], $message);
 
 
