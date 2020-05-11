@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+        <title>Simple FOC project </title>
+
+
+        <!-- FACEBOOK -->        
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Simple FOC">
+        <meta property="og:title" content="Arduino Simple Field Orineted Control project">
+        <meta property="og:description" content="Arudino Based Field Oriented Control library and shield aimed to demistify the FOC algorithm for the hobby community.">
+        <meta property="og:locale" content="en" />    
+        <meta property="og:author" content="Antun Skuric" />
+
+        <!--GOOGLE-->
+        <meta name="keywords" content="foc, filed,oriented,control,vektorko,upravljanje, arduino, simplefoc, shiled, bldc,motor, gimbal, smooth movements">
+        <meta name="description" content="Arudino Based Field Oriented Control library and shield aimed to demistify the FOC algorithm for the hobby community.">
+        <meta name="application-name" content="Simple FOC project">
+        <meta name="Author" content="Antun Skuric" />
+
+
+        <!-- ICONS -->
+        <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+
+        <!-- ROBOTO font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link href="assets/css/preload.css" rel="stylesheet">
+
+        <link href="assets/css/vendors.css" rel="stylesheet">
+        <link href="assets/css/syntaxhighlighter/shCore.css" rel="stylesheet" >
+
+        <link href="assets/css/style-blue.css" rel="stylesheet" title="default">
+        <link href="assets/css/width-full.css" rel="stylesheet" title="default">
+
+        <style>
+            .docs_link{
+                text-decoration: none !important; 
+                color:#666;
+            }
+            .docs_link div:hover{
+                color: #0099da;
+                background-color: #e5e5e5;
+            }
+            .docs_link div.text-icon{
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+            .docs_link div.text-icon-content{
+                padding-left: 50px;
+            }
+        </style>
+
+    </head>
+
+
+    <body>
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>
+
+        <div class="sb-site-container">
+            <div class="boxed">
+
+
+
+                <nav class="navbar navbar-default navbar-dark yamm navbar-static-top" role="navigation" id="header">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a id="ar-brand"  class="navbar-brand" href="simplefoc">Simple<span>FOC</span>project</a>
+                        </div> <!-- navbar-header -->
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="">
+                                    <a href="simplefoc" ><i class="fa fa-home fa-lg"></i> Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"> <i class="fa fa-code fa-lg"></i> Simple<span class="primary-color">FOC</span>library</a>
+                                    <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
+                                        <li><a href="https://github.com/askuric/Arduino-FOC" > <i class="fa fa-github fa-lg"></i> Git Repository </a></li>
+                                        <li><a href="https://askuric.github.io/Arduino-FOC" > <i class="fa fa-book fa-lg"></i> Documentation </a></li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a href="shop" ><i class="fa fa-shopping-cart fa-lg"></i> Shop </a>
+                                </li>
+                                <li class="">
+                                    <a href="contact" ><i class="fa fa-info-circle fa-lg"></i> Contact</a>
+                                </li>
+                        </div><!-- navbar-collapse -->
+                    </div><!-- container -->
+                </nav>
+                <header class="main-header">
+                    <div class="container">
+                        <h1 class="page-title">Product</h1>
+
+                        <ol class="breadcrumb pull-right">
+                            <li><a href="shop">Shop</a></li>
+                            <li class="active" style="color:#333!important;font-family: 'Roboto', sans-serif">Simple<span class="primary-color">FOC</span>Shield</li>
+                        </ol>
+                    </div>
+                </header>
+
+                <div class="container">
+                    <h2 class="section-title no-margin-top" style="color:#333!important;font-family: 'Roboto', sans-serif">Simple<span class="primary-color">FOC</span>Shield</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul class="bxslider">
+                                <li><img src="assets/img/shield_bo_v13.jpg" /></li>
+                                <li><img src="assets/img/shield_to_v13.jpg" /></li>
+                                <li><img src="assets/img/simple_foc_shield_v13_small.gif" /></li>
+                                <li><img src="assets/img/shield_top_v13.jpg" /></li>
+                                <li><img src="assets/img/shield_v13.jpg"/></li>
+                            </ul>
+
+                            <div id="bx-pager">
+                                <a data-slide-index="0" href=""><img src="assets/img/shield_bo_v13.jpg"  style="height: 50px"/></a>
+                                <a data-slide-index="1" href=""><img src="assets/img/shield_to_v13.jpg"  style="height: 50px"/></a>
+                                <a data-slide-index="2" href=""><img src="assets/img/simple_foc_shield_v13_small.gif"  style="height: 50px"/></a>
+                                <a data-slide-index="3" href=""><img src="assets/img/shield_top_v13.jpg"  style="height: 50px"/></a>
+                                <a data-slide-index="4" href=""><img src="assets/img/shield_v13.jpg"  style="height: 50px"/></a>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h3 style="color:#666" class="no-margin-top">Low cost modular BLDC motor driver board</h3>
+                            <ul class="list-group">
+                                <li class=" list-group-item ">
+                                    <h4 class='list-group-item-heading'>Plug & play</h4> 
+                                    <span class="list-group-text">Using <span style="font-family: 'Roboto', sans-serif;font-weight: 700">Simple<span class="primary-color">FOC</span>library</span> and most of Arduino boards</span>
+                                </li>
+                                <li class=" list-group-item">
+                                    <h4 class='list-group-item-heading'>Stackable</h4> 
+                                    <span class="list-group-text">Possible stacking 2 borads (2 BLDC motors +    2 sensors)</span>
+                                </li>
+                                <li class=" list-group-item">
+                                    <h4 class='list-group-item-heading'>Configurable pinout</h4> 
+                                    <span class="list-group-text">Pin configuration in hardware for L6234 and Encoders</span>
+                                </li>
+                                <li class=" list-group-item">
+                                    <h4 class='list-group-item-heading'>Encoder Pullups</h4> 
+                                    <span class="list-group-text">Integrated configurable 3KOhm Encoder pullups </span>
+                                </li>
+                                <li class=" list-group-item">
+                                    <h4 class='list-group-item-heading'>Open-Source</h4> 
+                                    <span class="list-group-text">Full documentation & fabrication files available </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="e-price">€ <span>35</span>.00</div>
+                            <!--<a href="#" class="btn btn-ar btn-block btn-success"><i class="fa fa-shopping-cart"></i> Add to Cart</a>-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="alert alert-success" style="display:none" id="preorder-success">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                        <strong><i class="fa fa-check"></i> Success!</strong> Your order is received, thank you!
+                                    </div>
+                                    <div class="alert alert-danger" style="display:none" id="preorder-error">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                        <strong><i class="fa fa-times"></i> Error!</strong> Something went wrong, try again later.
+                                    </div>
+                                </div>
+                                <form id="preorder" role="form">
+                                    <div class="form-group col-lg-12">
+                                        <!--<label for="email">Email address</label>-->
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                        <!--<label for="name">Name</label>-->
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                        <!--<label for="quantity">Quatity</label>-->
+                                        <input type="text" class="form-control" name="quantity" id="quantity" placeholder="Ex. 10" required> 
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                        <!--<label >Additional Information</label>-->
+                                        <textarea class="form-control" rows="3"  name="message" placeholder="Additional infomation"></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12 ">
+                                        <button type="submit" style="width:100%" class="btn btn-ar btn-success"><i class="fa fa-shopping-cart"></i>Preorder</button>
+                                        <label >* No payment required</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <h2 class="section-title margin-top-80">Documentation</h2>
+                    <section class="margin-bottom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a class="docs_link" href="assets/docs/SimpleFOCShieldV1.3/schematic.pdf"  download="simple_foc_shield_schematic">
+                                    <div class="text-icon wow fadeInUp">
+                                        <span class="icon-ar"><i class="fa fa-file"></i></span>
+                                        <div class="text-icon-content">
+                                            <h4  class="no-margin">Schematic</h4>
+                                            <p>PDF file</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="docs_link" href="assets/docs/SimpleFOCShieldV1.3/3d_model.zip" download="simple_foc_shield_3Dmodel">
+                                    <div class="text-icon wow fadeInUp">
+                                        <span class="icon-ar "><i class="fa fa-cubes"></i></span>
+                                        <div class="text-icon-content">
+                                            <h4 class="no-margin">3D model</h4>
+                                            <p>3D PDF & STEP file</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="docs_link" href="assets/docs/SimpleFOCShieldV1.3/Gerber.zip"  download="simple_foc_shield_fabrication">
+                                    <div class="text-icon wow fadeInUp ">
+                                        <span class="icon-ar"><i class="fa fa-file"></i></span>
+                                        <div class="text-icon-content">
+                                            <h4 class="no-margin">Gerber files</h4>
+                                            <p>Gerber, NC Drill & Assembly files</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="docs_link" href="assets/docs/SimpleFOCShieldV1.3/BOM.xlsx"  download="simple_foc_shield_BOM">
+                                    <div class="text-icon wow fadeInUp">
+                                        <span class="icon-ar "><i class="fa fa-bars"></i></span>
+                                        <div class="text-icon-content">
+                                            <h4 class="no-margin">Bill  Of Materials</h4>
+                                            <p>Excel sheet</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> <!-- row -->
+                    </section>
+
+                </div>
+
+                <aside id="footer-widgets">
+                    <div class="container margin-bottom margin-top-80">
+
+                        <div class="row">
+                            <div class="col-md-9 padding-top-20">
+                                <div class="col-sm-6 col-md-4">
+                                    <a class="text-center" href="https://github.com/askuric">
+                                        <div class="text-center">
+                                            <div class="icon-ar-circle icon-ar icon-ar-xl-lg"><i class="fa fa-github"></i></div><br>
+                                            Github
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <a class="text-center" href="https://www.linkedin.com/in/antun-skuric-63529291/">
+                                        <div class="text-center">
+                                            <div class="icon-ar-circle icon-ar icon-ar-xl-lg"><i class="fa fa-linkedin"></i></div><br>
+                                            LinkedIn
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <a class="text-center" href="https://www.youtube.com/channel/UC72nYRXqdAtYjgDeH8rRJqg">
+                                        <div class="text-center">
+                                            <div class="icon-ar-circle icon-ar icon-ar-xl-lg"><i class="fa fa-youtube"></i></div><br>
+                                            YouTube
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <h3 class="">Contact</h3>
+                                <address>
+                                    <strong>Antun Skuric</strong><br>
+                                    6 rue de la tour de Gassies<br>
+                                    33000 Bordeaux, France<br>
+                                    <abbr title="Phone">P:</abbr> +33 (0) 6 18 99 0823 <br>
+                                    Mail: <a href="mailto:antun.skuric@outlook.com">antun.skuric@outlook.com</a>
+                                </address>
+                            </div>
+                        </div> <!-- container -->
+                    </div>
+                </aside> <!-- footer-widgets -->
+                <footer id="footer">
+                    <p>&copy; 2020 <a href="#">TheSkuric</a></p>
+                </footer>
+
+            </div> <!-- boxed -->
+        </div> <!-- sb-site -->
+
+        <!-- Scripts -->
+        <!-- Compiled in vendors.js -->
+        <!--
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.cookie.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap-switch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/slidebars.min.js"></script>
+        <script src="assets/js/jquery.bxslider.min.js"></script>
+        <script src="assets/js/holder.js"></script>
+        <script src="assets/js/buttons.js"></script>
+        <script src="assets/js/jquery.mixitup.min.js"></script>
+        <script src="assets/js/circles.min.js"></script>
+        <script src="assets/js/masonry.pkgd.min.js"></script>
+        <script src="assets/js/jquery.matchHeight-min.js"></script>
+        -->
+
+        <script src="assets/js/vendors.js"></script>
+
+        <!--<script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+        <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>-->
+
+
+        <script src="assets/js/subscribe.js"></script>
+
+        <!-- Syntaxhighlighter -->
+        <script src="assets/js/syntaxhighlighter/shCore.js"></script>
+        <script src="assets/js/syntaxhighlighter/shBrushXml.js"></script>
+        <script src="assets/js/syntaxhighlighter/shBrushJScript.js"></script>
+
+        <script src="assets/js/DropdownHover.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/holder.js"></script>
+        <script src="assets/js/e-commerce_product.js"></script>
+
+    </body>
+
+</html>

@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+        
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <title>Simple FOC project </title>
+
+
+    <!-- FACEBOOK -->        
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Simple FOC">
+    <meta property="og:title" content="Arduino Simple Field Orineted Control project">
+    <meta property="og:description" content="Arudino Based Field Oriented Control library and shield aimed to demistify the FOC algorithm for the hobby community.">
+    <meta property="og:locale" content="en" />    
+    <meta property="og:author" content="Antun Skuric" />
+
+    <!--GOOGLE-->
+    <meta name="keywords" content="foc, filed,oriented,control,vektorko,upravljanje, arduino, simplefoc, shiled, bldc,motor, gimbal, smooth movements">
+    <meta name="description" content="Arudino Based Field Oriented Control library and shield aimed to demistify the FOC algorithm for the hobby community.">
+    <meta name="application-name" content="Simple FOC project">
+    <meta name="Author" content="Antun Skuric" />
+
+    
+    <!-- ICONS -->
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    
+    <!-- ROBOTO font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-     <title>Antun Skuric | Contact</title>
-
-
-    <meta name="description" content="">
-
     <!-- CSS -->
     <link href="assets/css/preload.css" rel="stylesheet">
-
-    <!-- Compiled in vendors.js -->
-    <!--
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-switch.min.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/animate.min.css" rel="stylesheet">
-    <link href="assets/css/slidebars.min.css" rel="stylesheet">
-    <link href="assets/css/lightbox.css" rel="stylesheet">
-    <link href="assets/css/jquery.bxslider.css" rel="stylesheet" />
-    <link href="assets/css/buttons.css" rel="stylesheet">
-    -->
 
     <link href="assets/css/vendors.css" rel="stylesheet">
     <link href="assets/css/syntaxhighlighter/shCore.css" rel="stylesheet" >
 
-    <!-- RS5.0 Stylesheet -->
-    <!--<link rel="stylesheet" type="text/css" href="assets/css/settings.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/navigation.css">-->
-
     <link href="assets/css/style-blue.css" rel="stylesheet" title="default">
     <link href="assets/css/width-full.css" rel="stylesheet" title="default">
 
-
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="assets/js/html5shiv.min.js"></script>
-        <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <style>
+        .header-link{
+            text-decoration: none !important; 
+            color:#666;
+        }
+        
+    </style>
+    
 </head>
+
+
+<body>
 
 <!-- Preloader -->
 <div id="preloader">
     <div id="status">&nbsp;</div>
 </div>
-
-<body>
-
+ 
 <div class="sb-site-container">
 <div class="boxed">
 
@@ -82,10 +90,10 @@
                         <li><a href="https://askuric.github.io/Arduino-FOC" > <i class="fa fa-book fa-lg"></i> Documentation </a></li>
                     </ul>
                 </li>
-                <li class="">
+                <li class="active">
                     <a href="shop" ><i class="fa fa-shopping-cart fa-lg"></i> Shop </a>
                 </li>
-                <li class="active">
+                <li class="">
                     <a href="contact" ><i class="fa fa-info-circle fa-lg"></i> Contact</a>
                 </li>
         </div><!-- navbar-collapse -->
@@ -94,73 +102,32 @@
     
 <header class="main-header">
     <div class="container">
-        <h1 class="page-title">Contact</h1>
+        <h1 class="page-title">Shop</h1>
 
         <ol class="breadcrumb pull-right">
             <li><a href="simplefoc">Home</a></li>
-            <li class="active">Contact</li>
+            <li class="active">Shop</li>
         </ol>
     </div>
 </header>
-    <section class='margin-top-80'>
+
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h2 class="section-title no-margin-top">Send Message</h2>
-        </div>
-        <div class="col-md-8">
-            <section>
-                <p style="font-size: 20px">I am happy to hear from you!</p>
-                <div class="alert alert-success" style="display:none" id="contact-success">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                    <strong><i class="fa fa-check"></i> Success!</strong> Your message has been sent, thank you!
-                </div>
-                <div class="alert alert-danger" style="display:none" id="contact-error">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                   <strong><i class="fa fa-times"></i> Error!</strong> Something went wrong, try sending the message again.
-                </div>
-                <form id="contact" role="form">
-                    <div class="form-group">
-                        <label for="InputName" >Name</label>
-                        <input type="text" class="form-control" id="InputName" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="InputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="InputEmail1" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="InputMessage">Mesagge</label>
-                        <textarea class="form-control" id="InputMessage" rows="8" name="message" required></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 col-xs-12 col-md-6 col-md-offset-3">
-                      <button type="submit" class="col-xs-12 btn btn-ar btn-primary">Send</button>
-                    </div>
-                    <div class="clearfix"></div>
-                </form>
-            </section>
-        </div>
-
-        <div class="col-md-4">
-            <section>
-                <div class="panel panel-primary">
-                    <div class="panel-heading"><i class="fa fa-envelope-o"></i> Additional Information</div>
-                    <div class="panel-body">
-                        <h4 class="section-title no-margin-top">Contacts</h4>
-                        <address>
-                            <strong>Antun Skuric</strong><br>
-                            6 rue de la tour de Gassies<br>
-                            33000 Bordeaux, France<br>
-                            <abbr title="Phone">P:</abbr> +33 (0) 6 18 99 0823 <br>
-                            Mail: <a href="mailto:antun.skuric@outlook.com">antun.skuric@outlook.com</a>
-                        </address>
+        <div class="row" id="Container">
+            <div class="col-sm-4 mix category-smartphone" data-price="64900" data-date="20130521" data-popularity="3">
+                <div class="ec-box">
+                    <div class="ec-box-header"><a href="simplefoc_shield_product"><span style="color:#333!important;font-family: 'Roboto', sans-serif">Simple<span class="primary-color">FOC</span>Shield</span></a></div>
+                    <a href="simplefoc_shield_product"><img src="assets/img/shield_to_v13.jpg" style="width: 100%" alt=""></a>
+                    <div class="ec-box-footer">
+                        <span class="label label-primary">€ 35.00</span>
+                        <a href="#" class="btn btn-ar btn-success btn-sm pull-right"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
-
 </div> <!-- container -->
-</section>
+
 <aside id="footer-widgets">
     <div class="container margin-bottom margin-top-80">
         
@@ -208,6 +175,9 @@
     <p>&copy; 2020 <a href="#">TheSkuric</a></p>
 </footer>
 
+</div> <!-- boxed -->
+</div> <!-- sb-site -->
+
 <!-- Scripts -->
 <!-- Compiled in vendors.js -->
 <!--
@@ -243,9 +213,7 @@
 <script src="assets/js/DropdownHover.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/holder.js"></script>
-<script src="assets/js/home_profile.js"></script>
-
+<script src="assets/js/commerce.js"></script>
 </body>
 
 </html>
-

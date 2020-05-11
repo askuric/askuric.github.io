@@ -965,7 +965,7 @@ hr.double {
 }
 .slogan {
   font-family: "Lato", sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 150%;
   margin-bottom: 50px;
   font-weight: 300;
@@ -984,9 +984,6 @@ hr.double {
   padding-bottom: 15px;
   margin-top: 39px;
   color: #000;
-}
-.section-title:first-letter {
-  color: #0099da;
 }
 .css-section {
   margin-bottom: 50px;
@@ -4422,7 +4419,6 @@ input.input-lg[type="text"] {
   margin: 0 auto;
 }
 .ec-box-footer {
-  background-color: #f5f5f5;
   padding: 5px;
   overflow: hidden;
   margin-top: 10px;
@@ -4439,13 +4435,15 @@ input.input-lg[type="text"] {
   font-size: 1.2em;
   color: #02c66c;
   text-align: center;
-  margin-top: 5px;
 }
 .ec-box-header {
-  background-color: #f5f5f5;
-  padding: 5px;
-  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 2em;
   text-align: center;
+}
+.ec-box-header a{    
+  text-decoration: none;
 }
 .ec-filters-menu ul {
   padding: 0;
@@ -5023,7 +5021,7 @@ input.input-lg[type="text"] {
 #header-full {
   background-image: url("../img/back.jpg");
   background-repeat: no-repeat;
-  height: 600px;
+  /*height: 700px;*/
   background-size: cover;
   color: #fff;
 }

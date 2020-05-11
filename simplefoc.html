@@ -6,47 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+        
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <title>Simple FOC project </title>
+
+
+    <!-- FACEBOOK -->        
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Simple FOC">
+    <meta property="og:title" content="Arduino Simple Field Orineted Control project">
+    <meta property="og:description" content="Arudino Based Field Oriented Control library and shield aimed to demistify the FOC algorithm for the hobby community.">
+    <meta property="og:locale" content="en" />    
+    <meta property="og:author" content="Antun Skuric" />
+
+    <!--GOOGLE-->
+    <meta name="keywords" content="foc, filed,oriented,control,vektorko,upravljanje, arduino, simplefoc, shiled, bldc,motor, gimbal, smooth movements">
+    <meta name="description" content="Arudino Based Field Oriented Control library and shield aimed to demistify the FOC algorithm for the hobby community.">
+    <meta name="application-name" content="Simple FOC project">
+    <meta name="Author" content="Antun Skuric" />
+
+    
+    <!-- ICONS -->
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    
+    <!-- ROBOTO font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    
-    <title>Simple FOC project</title>
-
-
-    <meta name="description" content="">
-
     <!-- CSS -->
     <link href="assets/css/preload.css" rel="stylesheet">
-
-    <!-- Compiled in vendors.js -->
-    <!--
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-switch.min.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/animate.min.css" rel="stylesheet">
-    <link href="assets/css/slidebars.min.css" rel="stylesheet">
-    <link href="assets/css/lightbox.css" rel="stylesheet">
-    <link href="assets/css/jquery.bxslider.css" rel="stylesheet" />
-    <link href="assets/css/buttons.css" rel="stylesheet">
-    -->
 
     <link href="assets/css/vendors.css" rel="stylesheet">
     <link href="assets/css/syntaxhighlighter/shCore.css" rel="stylesheet" >
 
-    <!-- RS5.0 Stylesheet -->
-    <!--<link rel="stylesheet" type="text/css" href="assets/css/settings.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/navigation.css">-->
-
     <link href="assets/css/style-blue.css" rel="stylesheet" title="default">
     <link href="assets/css/width-full.css" rel="stylesheet" title="default">
 
-
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="assets/js/html5shiv.min.js"></script>
-        <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <style>
+        .header-link{
+            text-decoration: none !important; 
+            color:#666;
+        }
+        
+        .docs_link{
+            text-decoration: none !important; 
+            color:#666;
+        }
+        .docs_link div:hover{
+            color: #0099da;
+            background-color: #e5e5e5;
+        }
+        .docs_link div.text-icon{
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .docs_link div.text-icon-content{
+            padding-left: 50px;
+        }
+    </style>
+    
 </head>
 
 
@@ -56,7 +77,7 @@
 <div id="preloader">
     <div id="status">&nbsp;</div>
 </div>
-
+ 
 <div class="sb-site-container">
 <div class="boxed">
 
@@ -69,47 +90,85 @@
                 <span class="sr-only">Toggle navigation</span>
                 <i class="fa fa-bars"></i>
             </button>
-            <a id="ar-brand"  class="navbar-brand" href="index.html">Simple<span>FOC</span>project</a>
+            <a id="ar-brand"  class="navbar-brand" href="simplefoc">Simple<span>FOC</span>project</a>
         </div> <!-- navbar-header -->
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="">
-                    <a href="index.html" ><i class="fa fa-home fa-lg"></i> Home</a>
+                <li class="active">
+                    <a href="simplefoc" ><i class="fa fa-home fa-lg"></i> Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"> <i class="fa fa-code fa-lg"></i> Simple<span class="primary-color">FOC</span>library</a>
+                    <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
+                        <li><a href="https://github.com/askuric/Arduino-FOC" > <i class="fa fa-github fa-lg"></i> Git Repository </a></li>
+                        <li><a href="https://askuric.github.io/Arduino-FOC" > <i class="fa fa-book fa-lg"></i> Documentation </a></li>
+                    </ul>
                 </li>
                 <li class="">
-                    <a href="https://github.com/askuric/Arduino-FOC" ><i class="fa fa-github fa-lg"></i> Github Repository</a>
+                    <a href="shop" ><i class="fa fa-shopping-cart fa-lg"></i> Shop </a>
                 </li>
                 <li class="">
-                    <a href="contact.html" ><i class="fa fa-info-circle fa-lg"></i> Contact</a>
+                    <a href="contact" ><i class="fa fa-info-circle fa-lg"></i> Contact</a>
                 </li>
         </div><!-- navbar-collapse -->
     </div><!-- container -->
 </nav>
 
 <header id="header-full">
-    <div class="">
-        <div class="container pull-right" style="padding-top: 150px; padding-right: 100px">
-            <h1 class="head-title animated bounceInDown animation-delay-8" style="font-weight: 700;text-align: right">Simple<span class="primary-color">FOC</span> project</h1>
-            <h2 class="primary-color-color text-center head-subtitle animated fadeInUp animation-delay-14" style="text-align: right">Arduino Compatible <br> Open Source <br>Field Oriented Control library</h2>
-            
+        <div class="container" style="padding-top: 150px;">
+            <h1 class="head-title animated bounceInDown animation-delay-8" style="font-weight: 700;">Simple<span class="primary-color">FOC</span>project</h1>
+            <div class=" margin-top-20 animated bounceInUp animation-delay-16" style="color:#666">
+                <p class="slogan text-center" style="font-family: 'Roboto', sans-serif; "> 
+                    Arduino Compatible Open Source <span>Field Oriented Control</span> (FOC) project
+                </p>
+                <div class="col-md-6 text-center  header-link-container">
+                    <a style="" class="header-link" href="#simplefoc_library">
+                      <span class="icon-ar icon-ar-circle icon-ar-xl-lg " style="color: white" > <i class="fa fa-lg fa-code"></i> </span>
+                        <br>
+                        <p class="slogan" style="font-family: 'Roboto', sans-serif; ">  
+                            Arduino <b>Simple</b><span><b>FOC</b></span><b>library</b><br> 
+                            <i style="font-size: 0.7em">Robust & modular FOC implementation</i><br>
+                            <i class="fa fa-chevron-down"></i>
+                        </p>  
+                    </a>
+                </div>
+                <div class="col-md-6 text-center   header-link-container">
+                    <a style="" class="header-link" href="#simplefoc_shiled">
+                        <span class="icon-ar icon-ar-circle icon-ar-xl-lg " ><img src="assets/img/logo_shield.png" style="width: 50px"> </span>
+                        <br>
+                        <p class="slogan" style="font-family: 'Roboto', sans-serif; ">  
+                            Arduino <b>Simple</b><span><b>FOC</b></span><b>Shield</b><br> 
+                            <i style="font-size: 0.7em">FOC supporting BLDC driver board</i><br>
+                            <i class="fa fa-chevron-down"></i>
+                        </p>
+                    </a>
+                </div>
+            </div>
         </div>
+</header>       
+    
+    
+           
+    
+<section class="section-lines">
+</section>
+<section id="simplefoc_library">
+    <div class="container">
+        <p class="slogan text-center no-margin" style="font-family: 'Roboto', sans-serif; font-size: 2em">Arduino Simple<span>FOC</span>library</p>
     </div>
-</header>
-
+    <div class="container">
+        <p class="slogan text-center no-margin" style="font-family: 'Roboto', sans-serif; font-size: 1.5em ">Open-Source user friendly FOC implementation 
+    </div>
+</section>
 <div class="container">
     <section class="margin-bottom margin-top">
         <div class="tab-content margin-top">
             <div class="tab-pane active">
                 <div class="row">
-                    <div>
-                        <p class="slogan" style="font-family: 'Roboto', sans-serif; "> 
-                            The aim of the <b>Simple</b><span><b>FOC</b></span> library to demistify the <span>Field Oriented Control</span> (FOC) algorithm and make a robust but simple implementation for <span>Arduino hadrware</span>, as well as to introduce the new <span>Arduino FOC shield board</span>.
-                        </p>
-                    </div>
                     <div class="col-md-6 col-lg-5">
                         <h2 class=" no-margin">YouTube demonstration video</h2>
-                        <p class="">This is a short video shownig the setup procedure and the capabilites of the SimpleFOC algorithm. </p>
+                        <p class="">This is a short video showig the setup procedure and the capabilites of the SimpleFOC algorithm. </p>
                         <p class=""><b>The video setup consists of:</b></p>
                         <ul class="list-group">
                             <li class="list-group-item">
@@ -190,15 +249,15 @@
     
 <section class="section-lines">
 </section>
-<section>
+<section id="simplefoc_shiled">
     <div class="container">
-        <p class="slogan text-center no-margin" style="font-family: 'Roboto', sans-serif; font-size: 50px">Arduino Simple<span>FOC</span> Shield board</p>
+        <p class="slogan text-center no-margin" style="font-family: 'Roboto', sans-serif; font-size: 2em">Arduino Simple<span>FOC</span>Shield</p>
     </div>
     <div class="container">
-        <p class="slogan text-center no-margin" style="font-family: 'Roboto', sans-serif; ">Low cost modular BLDC motor driver board
+        <p class="slogan text-center no-margin" style="font-family: 'Roboto', sans-serif;font-size: 1.5em ">Low cost modular BLDC motor driver board
     </div>
 </section>
-    <section class="margin-bottom margin-top">
+<section class="">
 <div class="container">
         <div class="tab-content margin-top">
              <div class="tab-pane active" >
@@ -210,7 +269,7 @@
                                 <span class="list-group-text">Fully compatible with <span style="font-family: 'Roboto', sans-serif;font-weight: 700">SimpleFOC</span> library and most of Arduino boards</span>
                             </li>
                             <li class=" list-group-item">
-                                <h4 class='list-group-item-heading'>Supports stacking</h4> 
+                                <h4 class='list-group-item-heading'>Stackable</h4> 
                                 <span class="list-group-text">Possible stacking 2 borads (2 BLDC motors +    2 sensors)</span>
                             </li>
                             <li class=" list-group-item">
@@ -226,23 +285,75 @@
                                 <span class="list-group-text">$25-$40</span>
                             </li>
                         </ul>
+                         <a href="simplefoc_shield_product" style="font-size: 1.2em" class="margin-bottom btn btn-ar btn-block btn-success"><i class="fa fa-shopping-cart"></i> View in Shop</a>
                     </div>
-                    <div class="col-md-3 col-lg-3">
+<!--                 <div class="col-md-3 col-lg-3">
                         <img class="img-responsive animated zoomInDown animation-delay-3" src="assets/img/shield_top_v13.png">
                     </div>
                     <div class="col-md-3 col-lg-3">
                         <img class="img-responsive animated zoomInDown animation-delay-3" src="assets/img/shield_v13.png">
+                    </div>-->
+                    <div class="col-md-6">
+                        <img class="img-responsive animated zoomInDown animation-delay-3" src="assets/img/simple_foc_shield_v13_small.gif">
                     </div>
                 </div>
             </div>
         </div>  
     </div>
         
+<div class="container">
+    <h2 class="section-title margin-top-80">Documentation</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <a class="docs_link" href="assets/docs/SimpleFOCShieldV1.3/schematic.pdf"  download="simple_foc_shield_schematic">
+                    <div class="text-icon wow fadeInUp">
+                        <span class="icon-ar"><i class="fa fa-file"></i></span>
+                        <div class="text-icon-content">
+                            <h4  class="no-margin">Schematic</h4>
+                            <p>PDF file</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="docs_link" href="assets/docs/SimpleFOCShieldV1.3/3d_model.zip" download="simple_foc_shield_3Dmodel">
+                    <div class="text-icon wow fadeInUp">
+                        <span class="icon-ar "><i class="fa fa-cubes"></i></span>
+                        <div class="text-icon-content">
+                            <h4 class="no-margin">3D model</h4>
+                            <p>3D PDF & STEP file</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="docs_link" href="assets/docs/SimpleFOCShieldV1.3/Gerber.zip"  download="simple_foc_shield_fabrication">
+                    <div class="text-icon wow fadeInUp ">
+                        <span class="icon-ar"><i class="fa fa-file"></i></span>
+                        <div class="text-icon-content">
+                            <h4 class="no-margin">Gerber files</h4>
+                            <p>Gerber, NC Drill & Assembly files</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="docs_link" href="assets/docs/SimpleFOCShieldV1.3/BOM.xlsx"  download="simple_foc_shield_BOM">
+                    <div class="text-icon wow fadeInUp">
+                        <span class="icon-ar "><i class="fa fa-bars"></i></span>
+                        <div class="text-icon-content">
+                            <h4 class="no-margin">Bill  Of Materials</h4>
+                            <p>Excel sheet</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div> <!-- row -->
         
-    <div class="container">
+    <div class="row">
         
         <div class="col-md-12">
-            <h2 class="right-line">Subscribe for Status Updates</h2>
+            <h2 class="section-title margin-top-80">Subscribe for Status Updates</h2>
         </div>
         <div class="col-md-12">
             <div class="alert alert-success" style="display:none" id="subscribe-success">
@@ -263,40 +374,14 @@
             </div>
         </form>
         <div class="col-lg-12">
-            <p class="slogan text-center no-margin pull-left" style="font-size: 20px;font-family: 'Roboto', sans-serif;">UPDATE: Arduino Simple FOC Shieled release in May 2020.</p>
+            <p class="slogan text-center no-margin pull-left" style="font-size: 20px;font-family: 'Roboto', sans-serif;">UPDATE: Arduino Simple<span class="primary-color">FOC</span>Shieled release in May 2020.</p>
         </div>
     </div>
+</div>
         
-    </section>
-    <section class="margin-bottom margin-top section-lines">
-        <div class="container margin-bottom">
-            <div class="col-md-12">
-                <h2 class="right-line">Preview: Arduino Simple FOC Shield V1.2</h2>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <img class="img-responsive animated zoomInDown animation-delay-3" src="assets/img/side_shield.jpg">
-            </div>              <div class="col-md-6 col-lg-3">
-                <img class="img-responsive animated zoomInDown animation-delay-3" src="assets/img/back_shield.jpg">
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <img class="img-responsive animated zoomInDown animation-delay-3" src="assets/img/top_shield.jpg">
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <img class="img-responsive animated zoomInDown animation-delay-3" src="assets/img/side2_shield.jpg">
-            </div>
-        </div>
-    </section>
-    <section class="margin-bottom margin-top">
-        <div class="container">
-            <div class="col-md-12">
-                <h2 class="right-line">Connection example</h2>
-            </div>
-            <div class="col-md-12">
-                <img class="img-responsive animated zoomInDown animation-delay-3" src="assets/img/foc_shiled_v12.jpg">
-            </div>
-        </div>
-    </section>
-    
+        
+</section>
+<!--    
     
 <section class="section-lines">
 </section>
@@ -339,7 +424,7 @@
           </div>
         </form>
     </div>
-</section>
+</section>-->
 
 
 <aside id="footer-widgets">
