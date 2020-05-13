@@ -13,8 +13,7 @@
 
 // Set your publishable key: remember to change this to your live publishable key in production
 // See your keys here: https://dashboard.stripe.com/account/apikeys
-//var stripe = Stripe('pk_live_I0WPk1A4ya83GbDGcDZpidI900xClBV8Qf');
-var stripe = Stripe('pk_test_eGxwL9iMloGAQKeYHHZl10Xc00brJBToEk');
+var stripe = Stripe('pk_live_I0WPk1A4ya83GbDGcDZpidI900xClBV8Qf');
 var elements = stripe.elements();
 
 // Set up Stripe.js and Elements to use in checkout form

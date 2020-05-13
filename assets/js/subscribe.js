@@ -81,13 +81,13 @@ $(window).on('load',function() {
         "url" : window.location.href
     };
     data = $(this).serialize() + "&" + $.param(data);
-//    $.ajax({
-//        type: "POST",
-//        dataType: "json",
-//        url: "https://antunskuric.com/assets/php/visits.php", //Relative or absolute path to response.php file
-//        data: data,
-//        success: function(data) {
-//        }
-//    }); 
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: "https://antunskuric.com/assets/php/visits.php", //Relative or absolute path to response.php file
+        data: data,
+        success: function(data) {
+        }
+    }); 
     return false; //- da se stranica izvrti
 });
