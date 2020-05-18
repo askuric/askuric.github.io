@@ -74,6 +74,9 @@
             .docs_link div.text-icon-content{
                 padding-left: 50px;
             }
+            .ship-zone{
+                z-index: 999;
+            }
         </style>
 
     </head>
@@ -135,7 +138,7 @@
                 </header>
 
                 <div class="container">
-                    <h3 class="section-title"><i class="fa fa-shopping-cart primary-color"></i> Order Details</h3>
+                    <h3 class="section-title"><span class="icon-ar icon-ar-round"><img src="assets/img/logo_shield.png" style="width:18px"></span> Order Details</h3>
                     <div class="row">
                         <div class="col-md-8">
                             <div class="content-box box-">
@@ -152,13 +155,13 @@
                                             <span id="qty">1</span>
                                             <a id="remove-qty" href="javascript:void(0);" class="icon-ar icon-ar-circle  icon-ar-sm"><i class="fa fa-minus"></i></a>
                                         </div>
-                                        <div class="label-primary label" style="font-size:1.2em">€ <span>35</span>.00</div>
+                                        <div class="label-primary label" style="font-size:1.2em">€ <span>20</span>.00</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="e-price"> <i class="fa fa-shopping-cart"></i> <span id="price">35</span>.00 € </div>
+                            <div class="e-price"> <img src="assets/img/logo_shield.png" style="width:20px"> <span id="price">20</span>.00 € </div>
                             <!--<a href="#" class="btn btn-ar btn-block btn-success"><i class="fa fa-shopping-cart"></i> Place Order</a>-->
 
                         </div>
@@ -166,22 +169,24 @@
                 </div>
 
                 <div class="container">
-                    <h3 class="section-title"><i class="fa fa-truck primary-color"></i> Shipping Details</h3>
+                    <h3 class="section-title"><span class="icon-ar icon-ar-round"><i class="fa fa-truck "></i></span> Shipping Details</h3>
                     <div class="row">
                         <div class="col-md-4 col-md-push-8">
                             <div class="e-price"> <i class="fa fa-truck"></i> <span id="shipping">15</span>.00 € </div>
                         </div>
-                        <div class="col-md-8 col-md-pull-4">
+                        <div class="col-md-8 col-md-pull-4"> 
+                            <div class="col-lg-12" style="margin-bottom: 10px">
+                                <p class="slogan text-center no-margin pull-left" style="font-size: 20px;font-family: 'Roboto', sans-serif;"><i class="fa fa-cubes fa-lg primary-color "></i> Boards are shipped from <i class="primary-color">EU</i> and <i class="primary-color">USA</i>.</p>
+                            </div>
                         <form id="payment-form">
-                                <div class="form-group  col-md-12">
-                                    <label >Shipping Zone</label><br>
-                                    <div class="">
-                                        <button type="button" class="btn btn-default ship-zone col-xs-6" id="world">World-wide</button>
-                                        <button type="button"  class="btn btn-primary ship-zone col-xs-6" id="eu">European Union </button>
-                                    </div>
+                                <div class="form-group col-md-12">
+                                    <label for="world">Select your shipping zone</label><br>
+                                    <button type="button"  class="btn btn-primary ship-zone col-sm-4 col-xs-12" id="eu">European Union </button>
+                                    <button type="button" class="btn btn-default ship-zone col-sm-4 col-xs-12" id="us">United States</button>
+                                    <button type="button" class="btn btn-default ship-zone col-sm-4 col-xs-12" id="world">World-wide</button>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label for="name">Recipient Name</label>
+                                    <label for="name">Recipient name</label>
                                     <input type="text" class="form-control" name="recipient" id="name" placeholder="Name" required>
                                 </div>
                                 <div class="form-group col-md-12">
@@ -215,11 +220,11 @@
                 </div>
             </div>
         <div class="container">
-            <h3 class="section-title"><i class="fa fa-credit-card primary-color"></i> Payment Details</h3>
+            <h3 class="section-title"><span class="icon-ar icon-ar-round"><i class="fa fa-credit-card"></i></span> Payment Details</h3>
             <div class="row">
                 <div class="col-md-4 col-md-push-8">
                     <div class="e-price"> 
-                        <i class="fa fa-shopping-cart"></i> + <i class="fa fa-truck"></i> <i class="fa fa-equals"></i> <span id="full">50</span>.00 €
+                        <img src="assets/img/logo_shield.png" style="width:18px"> + <i class="fa fa-truck"></i> <i class="fa fa-equals"></i> <span id="full">35</span>.00 €
                     </div>
                 </div>  
                 <div class="col-md-8 col-md-pull-4">      
@@ -293,8 +298,6 @@
     </footer>
 
 </div> <!-- boxed -->
-</div> <!-- sb-site -->
-
 <!-- Scripts -->
 <!-- Compiled in vendors.js -->
 <!--

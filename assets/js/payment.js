@@ -63,7 +63,7 @@ form.addEventListener('submit', function (ev) {
     
     var price_data = {
         qty: parseInt($("#qty").html()),
-        unit_price: 35,
+        unit_price: 20,
         shipping_price: parseInt($("#shipping").html())
     };
     var data = $(this).getFormData();
@@ -123,30 +123,27 @@ $("document").ready(function () {
     $("#add-qty").click(function () {
         var qty = parseInt($("#qty").html()) + 1;
         $("#qty").html(qty);
-        $("#price").html(qty * 35);
+        $("#price").html(qty * 20);
         $("#full").html(parseInt($("#price").html()) + parseInt($("#shipping").html()));
     });
     $("#remove-qty").click(function () {
         var qty = parseInt($("#qty").html()) - 1;
         if (qty < 1) qty = 1;
         $("#qty").html(qty);
-        $("#price").html(qty * 35);
+        $("#price").html(qty * 20);
         $("#full").html(parseInt($("#price").html()) + parseInt($("#shipping").html()));
     });
-    $("#eu").on('click touchstart', function () {
-        $("#eu").removeClass("btn-default");
-        $("#eu").addClass("btn-primary");
-        $("#world").removeClass("btn-primary");
-        $("#world").addClass("btn-default");
-        $("#shipping").html('15');
-        $("#full").html(parseInt($("#price").html()) + parseInt($("#shipping").html()));
-    });
-    $("#world").on('click touchstart', function () {
-        $("#world").removeClass("btn-default");
-        $("#world").addClass("btn-primary");
-        $("#eu").removeClass("btn-primary");
-        $("#eu").addClass("btn-default");
-        $("#shipping").html('25');
+    $(document).on('click touch tap', ".ship-zone", function () {
+        $(".ship-zone").removeClass("btn-primary");
+        $(".ship-zone").addClass("btn-default");
+        $(this).removeClass("btn-default");
+        $(this).addClass("btn-primary");
+        
+        if($(this).attr('id') == "world"){
+            $("#shipping").html('25');
+        }else{
+            $("#shipping").html('15');
+        }
         $("#full").html(parseInt($("#price").html()) + parseInt($("#shipping").html()));
     });
 });
