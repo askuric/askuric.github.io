@@ -10,7 +10,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 
-        <title>Simple FOC project </title>
+        <title>Simple FOC project | Order</title>
 
 
         <!-- FACEBOOK -->        
@@ -79,7 +79,31 @@
             }
         </style>
 
-    </head>
+        
+        <style>
+            .paypal-powered-by {
+                text-align: center;
+                margin: 10px auto;
+                height: 14px;
+                font-family: PayPal-Sans, HelveticaNeue, sans-serif;
+                font-size: 11px;
+                font-weight: normal;
+                font-style: italic;
+                font-stretch: normal;
+                color: #7b8388;
+                position: relative;
+                margin-right: 3px;
+                bottom: 3px;
+            }
+
+            .paypal-powered-by > .paypal-button-text,
+            .paypal-powered-by > .paypal-logo {
+                display: inline-block;
+                vertical-align: middle;
+                height: 16px;
+                line-height: 16px;
+            }
+        </style> 
 
 
     <body>
@@ -147,15 +171,15 @@
                                         <img src="assets/img/simple_foc_shield_v13_small.gif" alt="" class="img-responsive">
                                     </div>
                                     <div class="col-md-8 text-left">
-                                        <h3 class="content-box-title"><a href="simplefoc_shield_product" style="font-family: 'Roboto', sans-serif">SimpleFOCShield board</a></h3>
-                                        <p style="font-size:1.2em;font-style: italic">Low cost modular BLDC motor driver board</p>
+                                        <h3 class="content-box-title" style="margin-bottom:5px"><a href="simplefoc_shield_product" style="font-family: 'Roboto', sans-serif">SimpleFOCShield board</a></h3>
+                                        <p class="margin-bottom" style="font-size:1.2em;font-style: italic">Low cost modular BLDC motor driver board</p>
+                                        <div class="label-primary label" style="font-size:1.2em">€ <span>20</span>.00</div>
                                         <div class="margin-10" style="font-size:1.2em">
                                             <span>Quantity:   </span>
                                             <a id="add-qty" href="javascript:void(0);" class="icon-ar icon-ar-circle  icon-ar-sm"><i class="fa fa-plus"></i></a>
                                             <span id="qty">1</span>
                                             <a id="remove-qty" href="javascript:void(0);" class="icon-ar icon-ar-circle  icon-ar-sm"><i class="fa fa-minus"></i></a>
                                         </div>
-                                        <div class="label-primary label" style="font-size:1.2em">€ <span>20</span>.00</div>
                                     </div>
                                 </div>
                             </div>
@@ -163,101 +187,44 @@
                         <div class="col-md-4">
                             <div class="e-price"> <img src="assets/img/logo_shield.png" style="width:20px"> <span id="price">20</span>.00 € </div>
                             <!--<a href="#" class="btn btn-ar btn-block btn-success"><i class="fa fa-shopping-cart"></i> Place Order</a>-->
-
                         </div>
-                    </div>
+                    </div>      
                 </div>
-
-                <div class="container">
-                    <h3 class="section-title"><span class="icon-ar icon-ar-round"><i class="fa fa-truck "></i></span> Shipping Details</h3>
-                    <div class="row">
-                        <div class="col-md-4 col-md-push-8">
-                            <div class="e-price"> <i class="fa fa-truck"></i> <span id="shipping">15</span>.00 € </div>
-                        </div>
-                        <div class="col-md-8 col-md-pull-4"> 
-                            <div class="col-lg-12" style="margin-bottom: 10px">
-                                <p class="slogan text-center no-margin pull-left" style="font-size: 20px;font-family: 'Roboto', sans-serif;"><i class="fa fa-cubes fa-lg primary-color "></i> Boards are shipped from <i class="primary-color">EU</i> and <i class="primary-color">USA</i>.</p>
-                            </div>
-                        <form id="payment-form">
-                                <div class="form-group col-md-12">
-                                    <label for="world">Select your shipping zone</label><br>
-                                    <button type="button"  class="btn btn-primary ship-zone col-sm-4 col-xs-12" id="eu">European Union </button>
-                                    <button type="button" class="btn btn-default ship-zone col-sm-4 col-xs-12" id="us">United States</button>
-                                    <button type="button" class="btn btn-default ship-zone col-sm-4 col-xs-12" id="world">World-wide</button>
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <label for="name">Recipient name</label>
-                                    <input type="text" class="form-control" name="recipient" id="name" placeholder="Name" required>
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <label for="address">Address</label>
-                                    <input type="text" class="form-control" name="address1" id="address1" placeholder="Address line 1" required>
-                                    <input type="text" class="form-control" name="address2" id="address2" placeholder="Address line 2">
-                                    <input type="text" class="form-control" name="address3" id="address3" placeholder="Additional Address info">
-                                </div>
-                                <div class="form-group  col-md-6">
-                                    <label for="city">City</label>
-                                    <input type="text" class="form-control" name="city_shipping" id="city" placeholder="City" required>
-                                </div>
-                                <div class="form-group  col-md-6">
-                                    <label for="zip">ZIP code</label>
-                                    <input type="number" class="form-control" name="zip_shipping" id="zip" placeholder="ex. 12345" required>
-                                </div>
-                                <div class="form-group  col-md-6">
-                                    <label for="country">Country</label>
-                                    <input type="text" class="form-control" name="country" id="country" placeholder="Country" required>
-                                </div>
-                                <div class="form-group  col-md-6">
-                                    <label for="province">State or Region or Province</label>
-                                    <input type="text" class="form-control" name="province"  id="province" placeholder="State or Region or Province, if applicable" required>
-                                </div>
-                                <div class="form-group  col-md-12">
-                                    <label for="info">Additional Information</label>
-                                    <textarea name="info" class="form-control" rows="3" placeholder="Additional information"></textarea>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         <div class="container">
-            <h3 class="section-title"><span class="icon-ar icon-ar-round"><i class="fa fa-credit-card"></i></span> Payment Details</h3>
+            <h3 class="section-title"><span class="icon-ar icon-ar-round"><i class="fa fa-truck "></i></span> Shipping</h3>
+            <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <div class="e-price"> <i class="fa fa-truck"></i> <span id="shipping">10</span>.00 € </div>
+                    </div>
+                    <div class="col-md-8 col-md-pull-4">        
+                        <div class="form-group">
+                            <p class="slogan" style="margin-bottom: 5px">Select your shipping zone</p>
+                            <button type="button"  class="btn btn-primary ship-zone col-sm-4 col-xs-12" id="eu">European Union </button>
+                            <button type="button" class="btn btn-default ship-zone col-sm-4 col-xs-12" id="us">United States</button>
+                            <button type="button" class="btn btn-default ship-zone col-sm-4 col-xs-12" id="world">World-wide</button>
+                        </div> 
+                        <p class="slogan text-center pull-left " style="margin-top:15px;margin-bottom:15px;font-size: 20px;font-family: 'Roboto', sans-serif;"><i class="fa fa-cubes primary-color"></i> Orders are shipped from <i class="primary-color">European Union</i> <small>(and very soon from the <i class="primary-color">USA</i> )</small>.</p>
+                              
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+            <h3 class="section-title"></h3>
             <div class="row">
                 <div class="col-md-4 col-md-push-8">
                     <div class="e-price"> 
                         <img src="assets/img/logo_shield.png" style="width:18px"> + <i class="fa fa-truck"></i> <i class="fa fa-equals"></i> <span id="full">35</span>.00 €
                     </div>
-                </div>  
+                </div>     
                 <div class="col-md-8 col-md-pull-4">      
-                    <!--Example 1-->
-                    <div class="cell example example1" id="example-1">
-                        <div class="col-md-12 form-group">
-                            <label for="example1-name" data-tid="elements_examples.form.name_label">Name</label>
-                            <input id="example1-name" data-tid="elements_examples.form.name_placeholder" type="text" placeholder="Jane Doe" required="" name="name" class="form-control">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="example1-email" data-tid="elements_examples.form.email_label">Email</label>
-                            <input id="example1-email" data-tid="elements_examples.form.email_placeholder" type="email" placeholder="janedoe@gmail.com"  name="email" required="" class="form-control">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="example1-phone" data-tid="elements_examples.form.phone_label">Phone</label>
-                            <input id="example1-phone" data-tid="elements_examples.form.phone_placeholder" type="tel" placeholder="(941) 555-0123" name="tel" required="" class="form-control">
-                        </div>
-                        <div class="col-md-12 form-group">
-                            <label>Card Details</label>
-                            <div id="card-element" class="field form-control"></div>
-                        </div>
-                        <div id="card-errors"  class="col-md-12  alert-dismissible alert alert-danger" style="display:none" role="alert">
-                        </div>
-
-                        <div class="col-md-12 form-group">
-                            <button type="submit" id="pay-submit" class="btn btn-primary col-xs-12 col-md-6 col-md-offset-3" data-tid="elements_examples.form.pay_button">Place an Order</button>
-                        </div>
-                    </form>
+                    <div class="col-md-8 ">
+                        <a  id="to_checkout" href="#" class="btn btn-ar btn-lg btn-block btn-success"><i class="fa fa-shopping-cart"></i> Proceed to Checkout</a>
+                        <div class="paypal-powered-by">
+                        <span class="paypal-button-text">Powered by </span> <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMTAwIDMyIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1pbiBtZWV0IiB4bWxucz0iaHR0cDomI3gyRjsmI3gyRjt3d3cudzMub3JnJiN4MkY7MjAwMCYjeDJGO3N2ZyI+PHBhdGggZmlsbD0iIzAwMzA4NyIgZD0iTSAxMi4yMzcgMi40NDQgTCA0LjQzNyAyLjQ0NCBDIDMuOTM3IDIuNDQ0IDMuNDM3IDIuODQ0IDMuMzM3IDMuMzQ0IEwgMC4yMzcgMjMuMzQ0IEMgMC4xMzcgMjMuNzQ0IDAuNDM3IDI0LjA0NCAwLjgzNyAyNC4wNDQgTCA0LjUzNyAyNC4wNDQgQyA1LjAzNyAyNC4wNDQgNS41MzcgMjMuNjQ0IDUuNjM3IDIzLjE0NCBMIDYuNDM3IDE3Ljc0NCBDIDYuNTM3IDE3LjI0NCA2LjkzNyAxNi44NDQgNy41MzcgMTYuODQ0IEwgMTAuMDM3IDE2Ljg0NCBDIDE1LjEzNyAxNi44NDQgMTguMTM3IDE0LjM0NCAxOC45MzcgOS40NDQgQyAxOS4yMzcgNy4zNDQgMTguOTM3IDUuNjQ0IDE3LjkzNyA0LjQ0NCBDIDE2LjgzNyAzLjE0NCAxNC44MzcgMi40NDQgMTIuMjM3IDIuNDQ0IFogTSAxMy4xMzcgOS43NDQgQyAxMi43MzcgMTIuNTQ0IDEwLjUzNyAxMi41NDQgOC41MzcgMTIuNTQ0IEwgNy4zMzcgMTIuNTQ0IEwgOC4xMzcgNy4zNDQgQyA4LjEzNyA3LjA0NCA4LjQzNyA2Ljg0NCA4LjczNyA2Ljg0NCBMIDkuMjM3IDYuODQ0IEMgMTAuNjM3IDYuODQ0IDExLjkzNyA2Ljg0NCAxMi42MzcgNy42NDQgQyAxMy4xMzcgOC4wNDQgMTMuMzM3IDguNzQ0IDEzLjEzNyA5Ljc0NCBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwMzA4NyIgZD0iTSAzNS40MzcgOS42NDQgTCAzMS43MzcgOS42NDQgQyAzMS40MzcgOS42NDQgMzEuMTM3IDkuODQ0IDMxLjEzNyAxMC4xNDQgTCAzMC45MzcgMTEuMTQ0IEwgMzAuNjM3IDEwLjc0NCBDIDI5LjgzNyA5LjU0NCAyOC4wMzcgOS4xNDQgMjYuMjM3IDkuMTQ0IEMgMjIuMTM3IDkuMTQ0IDE4LjYzNyAxMi4yNDQgMTcuOTM3IDE2LjY0NCBDIDE3LjUzNyAxOC44NDQgMTguMDM3IDIwLjk0NCAxOS4zMzcgMjIuMzQ0IEMgMjAuNDM3IDIzLjY0NCAyMi4xMzcgMjQuMjQ0IDI0LjAzNyAyNC4yNDQgQyAyNy4zMzcgMjQuMjQ0IDI5LjIzNyAyMi4xNDQgMjkuMjM3IDIyLjE0NCBMIDI5LjAzNyAyMy4xNDQgQyAyOC45MzcgMjMuNTQ0IDI5LjIzNyAyMy45NDQgMjkuNjM3IDIzLjk0NCBMIDMzLjAzNyAyMy45NDQgQyAzMy41MzcgMjMuOTQ0IDM0LjAzNyAyMy41NDQgMzQuMTM3IDIzLjA0NCBMIDM2LjEzNyAxMC4yNDQgQyAzNi4yMzcgMTAuMDQ0IDM1LjgzNyA5LjY0NCAzNS40MzcgOS42NDQgWiBNIDMwLjMzNyAxNi44NDQgQyAyOS45MzcgMTguOTQ0IDI4LjMzNyAyMC40NDQgMjYuMTM3IDIwLjQ0NCBDIDI1LjAzNyAyMC40NDQgMjQuMjM3IDIwLjE0NCAyMy42MzcgMTkuNDQ0IEMgMjMuMDM3IDE4Ljc0NCAyMi44MzcgMTcuODQ0IDIzLjAzNyAxNi44NDQgQyAyMy4zMzcgMTQuNzQ0IDI1LjEzNyAxMy4yNDQgMjcuMjM3IDEzLjI0NCBDIDI4LjMzNyAxMy4yNDQgMjkuMTM3IDEzLjY0NCAyOS43MzcgMTQuMjQ0IEMgMzAuMjM3IDE0Ljk0NCAzMC40MzcgMTUuODQ0IDMwLjMzNyAxNi44NDQgWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMDMwODciIGQ9Ik0gNTUuMzM3IDkuNjQ0IEwgNTEuNjM3IDkuNjQ0IEMgNTEuMjM3IDkuNjQ0IDUwLjkzNyA5Ljg0NCA1MC43MzcgMTAuMTQ0IEwgNDUuNTM3IDE3Ljc0NCBMIDQzLjMzNyAxMC40NDQgQyA0My4yMzcgOS45NDQgNDIuNzM3IDkuNjQ0IDQyLjMzNyA5LjY0NCBMIDM4LjYzNyA5LjY0NCBDIDM4LjIzNyA5LjY0NCAzNy44MzcgMTAuMDQ0IDM4LjAzNyAxMC41NDQgTCA0Mi4xMzcgMjIuNjQ0IEwgMzguMjM3IDI4LjA0NCBDIDM3LjkzNyAyOC40NDQgMzguMjM3IDI5LjA0NCAzOC43MzcgMjkuMDQ0IEwgNDIuNDM3IDI5LjA0NCBDIDQyLjgzNyAyOS4wNDQgNDMuMTM3IDI4Ljg0NCA0My4zMzcgMjguNTQ0IEwgNTUuODM3IDEwLjU0NCBDIDU2LjEzNyAxMC4yNDQgNTUuODM3IDkuNjQ0IDU1LjMzNyA5LjY0NCBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA2Ny43MzcgMi40NDQgTCA1OS45MzcgMi40NDQgQyA1OS40MzcgMi40NDQgNTguOTM3IDIuODQ0IDU4LjgzNyAzLjM0NCBMIDU1LjczNyAyMy4yNDQgQyA1NS42MzcgMjMuNjQ0IDU1LjkzNyAyMy45NDQgNTYuMzM3IDIzLjk0NCBMIDYwLjMzNyAyMy45NDQgQyA2MC43MzcgMjMuOTQ0IDYxLjAzNyAyMy42NDQgNjEuMDM3IDIzLjM0NCBMIDYxLjkzNyAxNy42NDQgQyA2Mi4wMzcgMTcuMTQ0IDYyLjQzNyAxNi43NDQgNjMuMDM3IDE2Ljc0NCBMIDY1LjUzNyAxNi43NDQgQyA3MC42MzcgMTYuNzQ0IDczLjYzNyAxNC4yNDQgNzQuNDM3IDkuMzQ0IEMgNzQuNzM3IDcuMjQ0IDc0LjQzNyA1LjU0NCA3My40MzcgNC4zNDQgQyA3Mi4yMzcgMy4xNDQgNzAuMzM3IDIuNDQ0IDY3LjczNyAyLjQ0NCBaIE0gNjguNjM3IDkuNzQ0IEMgNjguMjM3IDEyLjU0NCA2Ni4wMzcgMTIuNTQ0IDY0LjAzNyAxMi41NDQgTCA2Mi44MzcgMTIuNTQ0IEwgNjMuNjM3IDcuMzQ0IEMgNjMuNjM3IDcuMDQ0IDYzLjkzNyA2Ljg0NCA2NC4yMzcgNi44NDQgTCA2NC43MzcgNi44NDQgQyA2Ni4xMzcgNi44NDQgNjcuNDM3IDYuODQ0IDY4LjEzNyA3LjY0NCBDIDY4LjYzNyA4LjA0NCA2OC43MzcgOC43NDQgNjguNjM3IDkuNzQ0IFoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDA5Y2RlIiBkPSJNIDkwLjkzNyA5LjY0NCBMIDg3LjIzNyA5LjY0NCBDIDg2LjkzNyA5LjY0NCA4Ni42MzcgOS44NDQgODYuNjM3IDEwLjE0NCBMIDg2LjQzNyAxMS4xNDQgTCA4Ni4xMzcgMTAuNzQ0IEMgODUuMzM3IDkuNTQ0IDgzLjUzNyA5LjE0NCA4MS43MzcgOS4xNDQgQyA3Ny42MzcgOS4xNDQgNzQuMTM3IDEyLjI0NCA3My40MzcgMTYuNjQ0IEMgNzMuMDM3IDE4Ljg0NCA3My41MzcgMjAuOTQ0IDc0LjgzNyAyMi4zNDQgQyA3NS45MzcgMjMuNjQ0IDc3LjYzNyAyNC4yNDQgNzkuNTM3IDI0LjI0NCBDIDgyLjgzNyAyNC4yNDQgODQuNzM3IDIyLjE0NCA4NC43MzcgMjIuMTQ0IEwgODQuNTM3IDIzLjE0NCBDIDg0LjQzNyAyMy41NDQgODQuNzM3IDIzLjk0NCA4NS4xMzcgMjMuOTQ0IEwgODguNTM3IDIzLjk0NCBDIDg5LjAzNyAyMy45NDQgODkuNTM3IDIzLjU0NCA4OS42MzcgMjMuMDQ0IEwgOTEuNjM3IDEwLjI0NCBDIDkxLjYzNyAxMC4wNDQgOTEuMzM3IDkuNjQ0IDkwLjkzNyA5LjY0NCBaIE0gODUuNzM3IDE2Ljg0NCBDIDg1LjMzNyAxOC45NDQgODMuNzM3IDIwLjQ0NCA4MS41MzcgMjAuNDQ0IEMgODAuNDM3IDIwLjQ0NCA3OS42MzcgMjAuMTQ0IDc5LjAzNyAxOS40NDQgQyA3OC40MzcgMTguNzQ0IDc4LjIzNyAxNy44NDQgNzguNDM3IDE2Ljg0NCBDIDc4LjczNyAxNC43NDQgODAuNTM3IDEzLjI0NCA4Mi42MzcgMTMuMjQ0IEMgODMuNzM3IDEzLjI0NCA4NC41MzcgMTMuNjQ0IDg1LjEzNyAxNC4yNDQgQyA4NS43MzcgMTQuOTQ0IDg1LjkzNyAxNS44NDQgODUuNzM3IDE2Ljg0NCBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA5NS4zMzcgMi45NDQgTCA5Mi4xMzcgMjMuMjQ0IEMgOTIuMDM3IDIzLjY0NCA5Mi4zMzcgMjMuOTQ0IDkyLjczNyAyMy45NDQgTCA5NS45MzcgMjMuOTQ0IEMgOTYuNDM3IDIzLjk0NCA5Ni45MzcgMjMuNTQ0IDk3LjAzNyAyMy4wNDQgTCAxMDAuMjM3IDMuMTQ0IEMgMTAwLjMzNyAyLjc0NCAxMDAuMDM3IDIuNDQ0IDk5LjYzNyAyLjQ0NCBMIDk2LjAzNyAyLjQ0NCBDIDk1LjYzNyAyLjQ0NCA5NS40MzcgMi42NDQgOTUuMzM3IDIuOTQ0IFoiPjwvcGF0aD48L3N2Zz4=" alt="" class="paypal-logo paypal-logo-paypal paypal-logo-color-blue"></div>
                     </div>
-
+                </div> 
             </div>
         </div>
-    </div>
 
 
     <aside id="footer-widgets">
@@ -290,14 +257,16 @@
                         </a>
                     </div>
                 </div>
-            </div> <!-- container -->
+            </div>  container 
         </div>
-    </aside> <!-- footer-widgets -->
+    </aside>  
+<!--                footer-widgets  -->
     <footer id="footer">
         <p>&copy; 2020 <a href="#">TheSkuric</a></p>
     </footer>
 
-</div> <!-- boxed -->
+    </div>
+</div> <!-- boxed 
 <!-- Scripts -->
 <!-- Compiled in vendors.js -->
 <!--
@@ -335,11 +304,76 @@
 <script src="assets/js/holder.js"></script>
 <script src="assets/js/e-commerce_product.js"></script>
 
-<!--strype-->
-<script src="https://js.stripe.com/v3/"></script>
-<script src="assets/js/payment.js"></script>
+<script>
+$("document").ready(function () {
+    $("#add-qty").click(function () {
+        var qty = parseInt($("#qty").html()) + 1;
+        $("#qty").html(qty);
+        $("#price").html(qty * 20);
+        $("#full").html(parseInt($("#price").html()) + parseInt($("#shipping").html()));
+    });
+    $("#remove-qty").click(function () {
+        var qty = parseInt($("#qty").html()) - 1;
+        if (qty < 1) qty = 1;
+        $("#qty").html(qty);
+        $("#price").html(qty * 20);
+        $("#full").html(parseInt($("#price").html()) + parseInt($("#shipping").html()));
+    });
+    $(document).on('click touch tap', ".ship-zone", function () {
+        $(".ship-zone").removeClass("btn-primary");
+        $(".ship-zone").addClass("btn-default");
+        $(this).removeClass("btn-default");
+        $(this).addClass("btn-primary");
+        
+        if($(this).attr('id') == "world"){
+            $("#shipping").html('15');
+        }else{
+            $("#shipping").html('10');
+        }
+        $("#full").html(parseInt($("#price").html()) + parseInt($("#shipping").html()));
+    });
+});
+</script>
 
 
+<script type="text/javascript" >
+$(document).ready(function () {
+    $("#to_checkout").click(function(){
+        console.log("here")
+        var form = $(document.createElement('form'));
+        $(form).attr("action", "checkout");
+        $(form).attr("method", "GET");
+        $(form).css("display", "none");
+
+        var quantity = $("<input>")
+        .attr("type", "text")
+        .attr("name", "quantity")
+        .val(  $("#qty").html() );
+        $(form).append($(quantity));
+
+        var shipping = $("<input>")
+        .attr("type", "text")
+        .attr("name", "shipping")
+        .val( $(".ship-zone.btn-primary").attr('id')  );
+        $(form).append($(shipping));
+
+//        var quantity = $("<input>")
+//        .attr("type", "text")
+//        .attr("name", "price_shield")
+//        .val(  $("#price").html() );
+//        $(form).append($(quantity));
+//
+//        var quantity = $("<input>")
+//        .attr("type", "text")
+//        .attr("name", "price_ship")
+//        .val(  $("#shipping").html() );
+//        $(form).append($(quantity));
+
+        form.appendTo( document.body );
+        $(form).submit();
+    });
+});
+</script>
 </body>
 
 </html>

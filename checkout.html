@@ -10,7 +10,8 @@
         <meta charset="utf-8" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 
-        <title>Simple FOC project | Success</title>
+        <title>Simple FOC project | Checkout</title>
+
 
         <!-- FACEBOOK -->        
         <meta property="og:type" content="article" />
@@ -31,6 +32,7 @@
         <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
         <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
 
+
         <!-- ROBOTO font -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -43,6 +45,7 @@
         <link href="assets/css/style-blue.css" rel="stylesheet" title="default">
         <link href="assets/css/width-full.css" rel="stylesheet" title="default">
 
+
          <!--Google analytics-->
          <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55976594-3"></script>
@@ -53,7 +56,6 @@
 
           gtag('config', 'UA-55976594-3');
         </script>
-
 
 
         <style>
@@ -72,9 +74,12 @@
             .docs_link div.text-icon-content{
                 padding-left: 50px;
             }
+            .ship-zone{
+                z-index: 999;
+            }
         </style>
 
-    </head>
+        
 
 
     <body>
@@ -123,26 +128,74 @@
                 </nav>
                 <header class="main-header">
                     <div class="container">
-                        <h1 class="page-title">Order Confirmation</h1>
+                        <h1 class="page-title">Checkout</h1>
 
                         <ol class="breadcrumb pull-right">
                             <li><a href="shop">Shop</a></li>
-                            <li class="active" >Order Confirmation</li>
+                            <li class="active" >Checkout</li>
                         </ol>
                     </div>
                 </header>
 
-                <div class="container text-center">
-                    <span class="icon-ar icon-ar-xxl-lg icon-ar-circle icon-ar-success" ><i class="fa fa-check"></i></span> 
-                    <h1 style="color:#666">Thank you very much,</h1>
-                    <h1 style="color:#666">Your order has been received!</h1>
-                    <h2 style="color:#666">It will be dispatched as soon as possible.</h2>
-                    <h4 style="color:#666">Contact email: <span class="primary-color">simplefoc@antunskuric.com</span></h4>
+        <div class="container">
+                <div class="col-md-6">
+                    <h4 class="section-title"><span class="icon-ar icon-ar-round"><img src="assets/img/logo_shield.png" style="width:18px"></span> Order Details</h4>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="e-price"> <img src="assets/img/logo_shield.png" style="width:20px"> <span id="price">20</span>.00 € </div>
+                            <!--<a href="#" class="btn btn-ar btn-block btn-success"><i class="fa fa-shopping-cart"></i> Place Order</a>-->
+                        </div>
+                        <div class="col-md-12">
+                            <div class="content-box box-">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/simple_foc_shield_v13_small.gif" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="col-md-8 text-left">
+                                        <h3 class="content-box-title" style="margin-bottom:5px"><a href="simplefoc_shield_product" style="font-family: 'Roboto', sans-serif">SimpleFOCShield board</a></h3>
+                                        <p style="font-size:1.2em;font-style: italic">Low cost modular BLDC motor driver board</p>
+                                        <div class="margin-10" style="font-size:1.2em">
+                                            <span>Quantity:   </span>
+                                            <span id="qty" style="font-weight:bold" class="primary-color">1</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
                 </div>
+                 <div class="col-md-6">
+                     <h4 class="section-title"><span class="icon-ar icon-ar-round"><i class="fa fa-truck "></i></span> Shipping zone</h4>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="e-price"> <i class="fa fa-truck"></i> <span id="shipping">10</span>.00 € </div>
+                        </div>
+                        <div class="col-md-12">        
+                            <div class="form-group">
+                                <p class="slogan" style="margin-bottom: 5px">Selected shipping zone: <span class="primary-color" id="zone_show"></span></p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+        <div class="col-md-12">
+            <h4 class="section-title"><span class="icon-ar icon-ar-round"><i class="fa fa-credit-card "></i></span> Payment</h4>
+            <div class="row">
+                <div class="col-md-6 col-md-push-6">
+                    <div class="e-price"> 
+                        <img src="assets/img/logo_shield.png" style="width:18px"> + <i class="fa fa-truck"></i> <i class="fa fa-equals"></i> <span id="full">35</span>.00 €
+                    </div>
+                </div>     
+                <div class="col-md-6 col-md-pull-6">      
+                    <div class="col-md-12">
+                        
+                        <div id="card-errors"  class="col-md-12  alert-dismissible alert alert-danger" style="display:none" role="alert">
+                        </div>
+                        <div id="paypal-button-container"></div>
+                    </div>
+                </div> 
             </div>
         </div>
-
-
+            </div>
     <aside id="footer-widgets">
         <div class="container margin-bottom margin-top-80">
 
@@ -173,16 +226,16 @@
                         </a>
                     </div>
                 </div>
-            </div> <!-- container -->
+            </div>  container 
         </div>
-    </aside> <!-- footer-widgets -->
+    </aside>  
+<!--                footer-widgets  -->
     <footer id="footer">
         <p>&copy; 2020 <a href="#">TheSkuric</a></p>
     </footer>
 
-</div> <!-- boxed -->
-</div> <!-- sb-site -->
-
+    </div>
+</div> <!-- boxed 
 <!-- Scripts -->
 <!-- Compiled in vendors.js -->
 <!--
@@ -220,6 +273,68 @@
 <script src="assets/js/holder.js"></script>
 <script src="assets/js/e-commerce_product.js"></script>
 
+<!--paypal-->
+<script src="https://www.paypal.com/sdk/js?client-id=Ac6bJEoW59NJJkRCnTrb2FFCerkEzmvGO5tZkChZDX7MLEqdDZD516VtVSW1foloSd3g-3zlJzRoIoWo&currency=EUR"> // Required. Replace SB_CLIENT_ID with your sandbox client ID. </script>
+
+<script>
+$("document").ready(function () {
+    var cart = window.location.search.slice(1)
+                      .split('&')
+                      .reduce(function _reduce (/*Object*/ a, /*String*/ b) {
+                        b = b.split('=');
+                        a[b[0]] = decodeURIComponent(b[1]);
+                        return a;
+                      }, {});
+    // if no order saved go to order
+    if(!cart["quantity"]) window.location = "order";
+    $("#qty").html(cart["quantity"]);
+    $("#price").html(cart["quantity"] * 20); 
+    if(cart["shipping"] === "world"){
+        $("#shipping").html('15');
+        $("#zone_show").html("World-Wide")
+    }else{
+        $("#shipping").html('10');
+        if(cart["shipping"] === "eu"){
+            $("#zone_show").html("European Union");
+        }else{
+            $("#zone_show").html("USA");
+        }
+    }
+    $("#full").html(parseInt($("#price").html()) + parseInt($("#shipping").html()));
+        
+    
+    paypal.Buttons({
+    createOrder: function(data, actions) {
+      // This function sets up the details of the transaction, including the amount and line item details.
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            currency_code: "EUR",
+            value: parseInt($("#price").html()) + parseInt($("#shipping").html()),
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      // This function captures the funds from the transaction.
+      return actions.order.capture().then(function(details) {
+        // This function shows a transaction success message to your buyer.
+            if (details.error === 'INSTRUMENT_DECLINED') {
+                $("#card-errors").html(details.error);
+                $("#card-errors").css("display","block");
+            }else{
+                window.location = "success"
+            }
+        });
+    }
+  }).render('#paypal-button-container');
+  //This function displays Smart Payment Buttons on your web page.
+        
+        
+        
+});
+  
+</script>
 
 </body>
 
