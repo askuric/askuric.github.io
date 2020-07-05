@@ -8,7 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    <title>Antun Skuric | Projects</title>
+    <title>askuric | Projects</title>
 
 
     <meta name="description" content="">
@@ -39,24 +39,6 @@
     <link href="assets/css/style-blue.css" rel="stylesheet" title="default">
     <link href="assets/css/width-full.css" rel="stylesheet" title="default">
 
-         <!--Google analytics-->
-         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55976594-3"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-55976594-3');
-        </script>
-
-
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="assets/js/html5shiv.min.js"></script>
-        <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <!-- Preloader -->
@@ -78,10 +60,10 @@
                 <span class="sr-only">Toggle navigation</span>
                 <i class="fa fa-bars"></i>
             </button>
-            <a id="ar-brand" class="navbar-brand" href="index.html">Antun<span>Skuric</span></a>
+            <a id="ar-brand" class="navbar-brand" href="/">askuric<span>github.io</span></a>
         </div> <!-- navbar-header -->
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<!--        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class=" active">
                     <a href="javascript:void(0);" > <i class="fa fa-home"></i> Home</a>
@@ -89,38 +71,44 @@
                 </li><li class="">
                     <a href="simplefoc.html" style="font-family: 'Roboto',sans-serif">Simple<span class="primary-color">FOC</span> project</a>
                 </li>
-                <li class="">
-                    <a href="contact.html" ><i class="fa fa-info-circle fa-lg"></i> Contact</a>
-                </li>
              </ul>
-        </div><!-- navbar-collapse -->
+        </div> navbar-collapse -->
     </div><!-- container -->
 </nav>
 
-<section class="section-lines padding-40">
-    <div class="container">
-        <p class="slogan text-center no-margin" > Projects </p>
-    </div>
-</section>
     <section class="margin-bottom margin-top">
 <div class="container">
         <div class="col-md-12">
-            <a href="simplefoc" style="text-decoration: none">
+            <a href="https://simplefoc.com" style="text-decoration: none">
                 <h2 class="right-line"> Arduino <span style="font-family: 'Roboto', sans-serif; "> Simple<span class="primary-color">FOC</span>library</span> <i class="fa fa-external-link"></i> </h2>
             </a>
         </div>
         <div class="tab-content margin-top">
             <div class="tab-pane active">
                 <div class="row">
-                    <div class="col-md-6 col-lg-5">
-                    <h3>Arduino Field Oriented Control Library</h3>
+                    <div class="col-md-12 margin-10">
                         <a href="https://github.com/askuric/Arduino-FOC" class="icon-ar icon-ar-lg  animated fadeInUp animation-delay-4"><i class="fa  fa-lg fa-github"></i></a>
                         <a href="https://www.youtube.com/channel/UC72nYRXqdAtYjgDeH8rRJqg" class="icon-ar icon-ar-lg  animated fadeInUp animation-delay-4"><i class="fa    fa-lg fa-youtube"></i></a>
-                        <p>The aim of this project is to demystify the Field Oriented Control algorithm and create a good base for the wide use of BLDC motors in the low-cost community.</p>
+                        <a href="https://community.simplefoc.com" class="icon-ar icon-ar-lg  animated fadeInUp animation-delay-4"> <i class="fa fa-lg">
+                            <svg id="fab-discourse" style="width:21px;fill:white" viewBox="0 0 448 512">
+                                    <path d="M225.9 32C103.3 32 0 130.5 0 252.1 0 256 .1 480 .1 480l225.8-.2c122.7 0 222.1-102.3 222.1-223.9C448 134.3 348.6 32 225.9 32zM224 384c-19.4 0-37.9-4.3-54.4-12.1L88.5 392l22.9-75c-9.8-18.1-15.4-38.9-15.4-61 0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128z"></path>
+                            </svg>
+                        </i> </a>
+                        
+                        <p>The aim of this project is to demystify the Field Oriented Control algorithm and create a good base for the wide use of BLDC motors in the low-cost community.
+                        This Arduino library implements Field Oriented Control (FOC) algorithm for BLDC motors. FOC algorithm produces incomparably smooth operation and high degree of torque, velocity and position control. The library is intended both for:
+                        <ul>
+                            <li> Beginners searching for a simple and user-friendly way to learn how to control BLDC motors</li>
+                            <li> Advanced users ready to dig deeper into the FOC algorithm and optimize the code for their particular application/hardware.</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
                         <ul class="list-group">
                             <li class=" list-group-item ">
                                 <h4 class='list-group-item-heading'>Arduino Compatible</h4> 
-                                <span class="list-group-text">Fully compatible with  most of the Arduino boards</span>
+                                <span class="list-group-text">Fully compatible with  most of the Arduino boards</span><br>
+                                <span class="list-group-text">Available through <b>Arduino Library Manager</b></span>
                             </li>
                             <li class=" list-group-item">
                                 <h4 class='list-group-item-heading'>Fully configurable</h4> 
@@ -128,7 +116,12 @@
                             </li>
                             <li class=" list-group-item">
                                 <h4 class='list-group-item-heading'>Modular</h4> 
-                                <span class="list-group-text">Applicable to any type of BLDC motor + driver combination, supports Encoders and Magnetic sensors </span>
+                                <span class="list-group-text">Applicable to any type of BLDC motor + driver combination, supports Encoders and Magnetic sensors </span><br>
+                                <span class="list-group-text">Supports Arduino, STM32 and ESP32 boards </span>
+                            </li>
+                            <li class=" list-group-item">
+                                <h4 class='list-group-item-heading'>Plug & play</h4> 
+                                <span class="list-group-text">Arduino SimpleFOCShield </span>
                             </li>
                         </ul>
                     </div>
@@ -143,43 +136,58 @@
 <section class="margin-bottom margin-top section-lines">
 <div class="container"> 
     <div class="col-md-12">
-        <a href="simplefoc" style="text-decoration: none">
+        <a href="https://simplefoc.com" style="text-decoration: none">
             <h2 class="right-line"> Arduino <span style="font-family: 'Roboto', sans-serif; "> Simple<span class="primary-color">FOC</span>Shield</span> <i class="fa fa-external-link"></i> </h2>
         </a>
     </div>
     <div class="tab-content margin-top">
              <div class="tab-pane active" >
                 <div class="row">
+                    <div class="col-md-12 margin-10">
+                        <a href="https://github.com/askuric/Arduino-FOC" class="icon-ar icon-ar-lg  animated fadeInUp animation-delay-4"><i class="fa  fa-lg fa-github"></i></a>
+                        <a href="https://community.simplefoc.com" class="icon-ar icon-ar-lg  animated fadeInUp animation-delay-4"> <i class="fa fa-lg">
+                            <svg id="fab-discourse" style="width:21px;fill:white" viewBox="0 0 448 512">
+                                    <path d="M225.9 32C103.3 32 0 130.5 0 252.1 0 256 .1 480 .1 480l225.8-.2c122.7 0 222.1-102.3 222.1-223.9C448 134.3 348.6 32 225.9 32zM224 384c-19.4 0-37.9-4.3-54.4-12.1L88.5 392l22.9-75c-9.8-18.1-15.4-38.9-15.4-61 0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128z"></path>
+                            </svg>
+                        </i> </a>
+                        <a href="https://simplefoc.com/simplefoc_shield_product" class="icon-ar icon-ar-lg icon-ar-success animated fadeInUp animation-delay-4"><i class="fa fa-lg fa-shopping-cart"></i></a>
+                        
+                        
+                        <p>This is an open-source low-cost Brushless DC (BLDC) motor driver board intended primarily for low-power FOC applications up to 5Amps. The board is fully compatible with the Arduino UNO and all the boards with the standard Arduino headers. The SimpleFOCShield, in combination with the SimpleFOClibrary provides user-friendly way to control BLDC motors both in hardware and software.</p>
+                    </div>
                      <div class="col-md-6 col-lg-5">
-                        <h3>Low cost modular BLDC motor driver board</h3>
                         <ul class="list-group">
                             <li class=" list-group-item ">
                                 <h4 class='list-group-item-heading'>Plug & play</h4> 
-                                <span class="list-group-text">Fully compatible with <span style="font-family: 'Roboto', sans-serif;font-weight: 700">SimpleFOC</span> library and most of Arduino boards</span>
+                                <span class="list-group-text">Fully compatible with <span style="font-family: 'Roboto', sans-serif;font-weight: 700">SimpleFOClibrary</span> and any board with Arduino UNO headers.</span>
                             </li>
                             <li class=" list-group-item">
-                                <h4 class='list-group-item-heading'>Supports stacking</h4> 
-                                <span class="list-group-text">Possible stacking 2 boards (2 BLDC motors +    2 sensors)</span>
+                                <h4 class='list-group-item-heading'>Stackable</h4> 
+                                <span class="list-group-text">Possibility of stacking 2 shields (2 BLDC motors + 2 position sensors)</span>
                             </li>
                             <li class=" list-group-item">
                                 <h4 class='list-group-item-heading'>Configurable pinout</h4> 
-                                <span class="list-group-text">Pin configuration in hardware for L6234 and Encoders</span>
+                                <span class="list-group-text">Possible to choose all the pins used by the board.</span>
                             </li>
                             <li class=" list-group-item">
-                                <h4 class='list-group-item-heading'>Encoder Pullups</h4> 
-                                <span class="list-group-text">Integrated configurable 3KOhm Encoder pullups </span>
+                                <h4 class='list-group-item-heading'>Encoder Pull-Ups</h4> 
+                                <span class="list-group-text">Integrated configurable 3KOhm Encoder pull-ups </span>
                             </li>
                             <li class=" list-group-item">
-                                <h4 class='list-group-item-heading'>Low cost</h4> 
-                                <span class="list-group-text">$25-$40</span>
+                                <h4 class='list-group-item-heading'>Open-Source</h4> 
+                                <span class="list-group-text">Schematics and fabrication files fully available.</span>
                             </li>
                         </ul>
-                    </div>
-                    <div class="col-md-3 col-lg-3">
+                     </div>
+<!--                 <div class="col-md-3 col-lg-3">
                         <img class="img-responsive animated zoomInDown animation-delay-3" src="assets/img/shield_top_v13.png">
                     </div>
                     <div class="col-md-3 col-lg-3">
                         <img class="img-responsive animated zoomInDown animation-delay-3" src="assets/img/shield_v13.png">
+                    </div>-->
+                    <div class="col-md-6 col-lg-7">
+                        <iframe style="width:100%;min-height: 400px;"  src="https://www.youtube.com/embed/G5pbo0C6ujE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!--<img class="img-responsive animated zoomInDown animation-delay-3" src="assets/img/simple_foc_shield_v13_small.gif">-->
                     </div>
                 </div>
             </div>
@@ -189,20 +197,69 @@
 <section class="margin-bottom margin-top">
 <div class="container">
     <div class="col-md-12">
-        <h2 class="right-line">Inertia Wheel Inverted Pendulum project</h2>
+        <h2 class="right-line">Arduino FOC Inertia Wheel Inverted Pendulum </h2>
     </div>
     <div class="tab-content margin-top">
             <div class="tab-pane active">
                 <div class="row">
+                    <div class="col-md-12 margin-10">
+                        <a href="https://github.com/askuric/Arduino-FOC-reaction-wheel-inverted-pendulum" class="icon-ar icon-ar-lg  animated fadeInUp animation-delay-4"><i class="fa  fa-lg fa-github"></i></a>
+                        <a href="https://www.thingiverse.com/thing:4416233" class="icon-ar icon-ar-lg  animated fadeInUp animation-delay-4"><img src="assets/img/thingiverse-logo-mini.png" style="width:50px"></a>
+                    
+                        <p>This is a project of designing and controlling the reaction wheel inverted pendulum based entirely on Arduino SimpleFOC library and SimpleFOC shield.<br>
+                        This is a very fun project in many ways, and it is intended:
+                        <ul>
+                            <li>Students in search for a good testing platform for their advanced algorithms</li>
+                            <li>Everyone with a bit of free time and a motivation to create something cool :D</li>
+                        </ul>
+                        </p>
+                        
+                    </div>
                     <div class="col-md-6 col-lg-5">
-                        <h3 class=" no-margin">Open source 3d printed inverted pendulum setup</h3>
+                        <ul class="list-group">
+                                <li class=" list-group-item ">
+                                    <h4 class='list-group-item-heading'>Arudino code</h4> 
+                                    <span class="list-group-text">Written for Arduino UNO using <b>SimpleFOClibrary</b> and <b>SimpleFOCShield</b> </span>
+                                </li>
+                                <li class=" list-group-item">
+                                    <h4 class='list-group-item-heading'>CAD designs</h4> 
+                                    <span class="list-group-text">All CAD designs available for modification and STL files provided</span>
+                                </li>
+                                <li class=" list-group-item">
+                                    <h4 class='list-group-item-heading'>Control algorithm</h4> 
+                                    <span class="list-group-text">State-space LQR controller</span>
+                                </li>
+                                <li class=" list-group-item">
+                                    <h4 class='list-group-item-heading'>Plug and Play</h4> 
+                                    <span class="list-group-text">Very simple to assemble, configure and setup.</span>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-7">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ih-izQyXJCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  style="width:100%;min-height: 400px;" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+    </section>
+    
+<section class="margin-bottom margin-top section-lines">
+<div class="container">
+    <div class="col-md-12">
+        <h2 class="right-line"> DC motor Inertia Wheel Inverted Pendulum project</h2>
+    </div>
+    <div class="tab-content margin-top">
+            <div class="tab-pane active">
+                <div class="row">
+                    <div class="col-md-12 margin-10">
                         <a href="https://github.com/askuric/inverted_inertia_pendulum" class="icon-ar icon-ar-lg  animated fadeInUp animation-delay-4"><i class="fa  fa-lg fa-github"></i></a>
                         <a href="https://www.thingiverse.com/thing:3422949" class="icon-ar icon-ar-lg  animated fadeInUp animation-delay-4"><img src="assets/img/thingiverse-logo-mini.png" style="width:50px"></a>
                     
-                        <p > 
-                            This project is suitable for anyone with extra free time and passion for interesting projects, but especially for electrical engineering students (control theory students) to learn the control approach of an unstable process and test their algorithms, the primary contorller used in this project is LQR.</p>
+                        <p>This project is suitable for anyone with extra free time and passion for interesting projects, but especially for electrical engineering students (control theory students) to learn the control approach of an unstable process and test their algorithms, the primary controller used in this project is LQR.</p>
                         
-                    
+                    </div>
+                    <div class="col-md-6 col-lg-5">
                         <ul class="list-group">
                                 <li class=" list-group-item ">
                                     <h4 class='list-group-item-heading'>STM32 code</h4> 
@@ -217,8 +274,8 @@
                                     <span class="list-group-text">PID and LQR loops implemented</span>
                                 </li>
                                 <li class=" list-group-item">
-                                    <h4 class='list-group-item-heading'>Plug and Play</h4> 
-                                    <span class="list-group-text">Easy setup</span>
+                                    <h4 class='list-group-item-heading'>Matlab code</h4> 
+                                    <span class="list-group-text">Matlab model and controller design script</span>
                                 </li>
                             </ul>
                     </div>
@@ -270,31 +327,8 @@
     </footer>
 
 <!-- Scripts -->
-<!-- Compiled in vendors.js -->
-<!--
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.cookie.js"></script>
-<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-switch.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/slidebars.min.js"></script>
-<script src="assets/js/jquery.bxslider.min.js"></script>
-<script src="assets/js/holder.js"></script>
-<script src="assets/js/buttons.js"></script>
-<script src="assets/js/jquery.mixitup.min.js"></script>
-<script src="assets/js/circles.min.js"></script>
-<script src="assets/js/masonry.pkgd.min.js"></script>
-<script src="assets/js/jquery.matchHeight-min.js"></script>
--->
-
 <script src="assets/js/vendors.js"></script>
 
-<!--<script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
-<script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>-->
-
-
-<script src="assets/js/subscribe.js"></script>
 
 <!-- Syntaxhighlighter -->
 <script src="assets/js/syntaxhighlighter/shCore.js"></script>
