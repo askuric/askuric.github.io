@@ -7,6 +7,8 @@ collection: portfolio
 
 <a href="https://github.com/simplefoc/Arduino-FOC-balancer"> <i class="fab fa-github"></i> Github</a>
 
+[![](https://github-readme-stats.vercel.app/api/pin/?username=simplefoc&repo=Arduino-FOC-balancer)](https://github.com/simplefoc/Arduino-FOC-balancer)
+
 Modular Arduino two wheel balancing robot based on gimbal BLDC motors and <i>Simple<b>FOC</b>library</i>.   
 
 <img src='https://github.com/simplefoc/Arduino-FOC-balancer/raw/main/images/balancer_three.jpg' style='max-height:300px'>
