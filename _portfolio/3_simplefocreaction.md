@@ -13,6 +13,8 @@ collection: portfolio
 
 ![Test Compile](https://github.com/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum/workflows/Library%20Compile/badge.svg)
 
+[![](https://github-readme-stats.vercel.app/api/pin/?username=simplefoc&repo=Arduino-FOC-reaction-wheel-inverted-pendulum)](https://github.com/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum)
+
 This is a project of designing and controlling the reaction wheel inverted pendulum based entirely on Arduino [*Simple**FOC**library*](/portfolio/1_simplefoclibrary) and [*Simple**FOC**shield*](/portfolio/2_simplefocshield)
 
 <p align="center">
