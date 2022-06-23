@@ -4,8 +4,11 @@ excerpt: "This is an open-source low-cost Brushless DC (BLDC) motor driver board
 collection: portfolio
 ---
 
-
 <a href="https://github.com/simplefoc/Arduino-SimpleFOCShield"> <i class="fab fa-github"></i> Github</a>
+
+
+[![](https://github-readme-stats.vercel.app/api/pin/?username=simplefoc&repo=arduino-simplefocshield)](https://github.com/simplefoc/Arduino-SimpleFOCShield)
+
 
 This is an open-source low-cost Brushless DC (BLDC) motor driver board intended primarily for low-power FOC applications up to 5Amps. The board is fully compatible with the Arduino UNO and all the boards with the standard Arduino headers. The SimpleFOCShield, in combination with the SimpleFOClibrary provides user-friendly way to control BLDC motors both in hardware and software.
 
