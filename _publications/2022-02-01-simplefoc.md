@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication_simplefoc
 excerpt: 'On-line feasible wrench polytope evaluation based on human musculoskeletal models: an iterative convex hull method.'
 date: 2022-01-01
-venue: 'Submitted to Journal of Open-Source Software'
+venue: 'Journal of Open-Source Software'
 paperurl: 'https://github.com/openjournals/joss-reviews/issues/3999'
 citation: ''
 authors: '<b>Antun Skuric</b>, Hasan Sinan Bank, Richard Unger, Owe Williams, and David González-Reyes'
