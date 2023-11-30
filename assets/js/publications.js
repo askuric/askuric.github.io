@@ -34,7 +34,7 @@ function load_data_from_hall(url, id_div, id_num){
                 '<p style="margin-top:10px;margin-bottom:10px"><b>'+ '<a target="_blank" href="https://inria.hal.science/'+paper.halId_s+'">' +paper.title_s[0] +'</a></b><br>by '+ 
                 authors+' <em><br>'+
                  ((paper.journalTitle_s) ? paper.journalTitle_s  : ((paper.conferenceTitle_s) ? paper.conferenceTitle_s : '') ) + "</em>"+
-                 ((paper.files_s) ? ' <a target="_blank" href="'+paper.files_s+'">('+paper.halId_s+')</a>' : '')
+                 ((paper.files_s) ? ' <a target="_blank" href="'+paper.files_s+'">('+paper.halId_s+')</a>' : ''))
             })
         },
         success: function(data){
