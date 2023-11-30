@@ -22,10 +22,10 @@ function load_data_from_hall(url, id_div, id_num){
 
             
             papers.forEach(function(paper){
-                if(paper.publicationDateY_i != year){
-                    year = paper.publicationDateY_i
-                    $('#'+id_div).html( $('#'+id_div).html() + "<h5 style='text-align:left;margin-top:10px;margin-bottom:10px'>"+year+"</h5>")
-                }
+                // if(paper.publicationDateY_i != year){
+                //     year = paper.publicationDateY_i
+                //     $('#'+id_div).html( $('#'+id_div).html() + "<h5 style='text-align:left;margin-top:10px;margin-bottom:10px'>"+year+"</h5>")
+                // }
                 authors = ((paper.authFullName_s.length < 5) ? paper.authFullName_s.join(", ") : paper.authFullName_s.slice(0, 4).join(", ") + ' et al.')
                 // make the author Antun Skuric bold
                 authors = authors.replace("Antun Skuric", "<b>Antun Skuric</b>")
