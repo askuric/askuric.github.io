@@ -24,7 +24,7 @@ function load_data_from_hall(url, id_div, id_num){
             papers.forEach(function(paper){
                 if(paper.publicationDateY_i != year){
                     year = paper.publicationDateY_i
-                    $('#'+id_div).html( $('#'+id_div).html() + "<h5 style='text-align:left'>"+year+"</h5>")
+                    $('#'+id_div).html( $('#'+id_div).html() + "<h5 style='text-align:left;margin-top:10px;margin-bottom:10px'>"+year+"</h5>")
                 }
                 $('#'+id_div).html( $('#'+id_div).html() +
                 '<p style="margin-top:10px;margin-bottom:10px"><b>'+ paper.title_s[0] +'</b><br> '+ 
