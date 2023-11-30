@@ -22,19 +22,19 @@ function load_data_from_hall(url, id_div, id_num){
 
             
             papers.forEach(function(paper){
-                // if(paper.publicationDateY_i != year){
-                //     year = paper.publicationDateY_i
-                //     $('#'+id_div).html( $('#'+id_div).html() + "<h5 style='text-align:left;margin-top:10px;margin-bottom:10px'>"+year+"</h5>")
-                // }
+                if(paper.publicationDateY_i != year){
+                    year = paper.publicationDateY_i
+                    $('#'+id_div).html( $('#'+id_div).html() + "<h5 style='text-align:left;margin-top:10px;margin-bottom:10px'>"+year+"</h5>")
+                }
                 authors = ((paper.authFullName_s.length < 5) ? paper.authFullName_s.join(", ") : paper.authFullName_s.slice(0, 4).join(", ") + ' et al.')
                 // make the author Antun Skuric bold
                 authors = authors.replace("Antun Skuric", "<b>Antun Skuric</b>")
 
                 $('#'+id_div).html( $('#'+id_div).html() +
-                '<p style="margin-top:10px;margin-bottom:10px"><b>'+ paper.title_s[0] +'</b><br> '+ 
+                '<p style="margin-top:10px;margin-bottom:10px"><b>'+ '<a target="_blank" href="'+paper.files_s+'">' +paper.title_s[0] +'</a></b><br>by '+ 
                 authors+' <em><br>'+
                  ((paper.journalTitle_s) ? paper.journalTitle_s  : ((paper.conferenceTitle_s) ? paper.conferenceTitle_s : '') )
-                +'</em> <a target="_blank" href="'+paper.files_s+'">('+paper.halId_s+')</a></p>')
+                +'</em> ('+paper.halId_s+')</p>')
             })
         },
         success: function(data){
