@@ -13,19 +13,39 @@
 {% endif %}
 
 
+<style>
+    .project_teaser{
+        float: left;
+        width:40%;
+        margin-right: 20px;
+        overflow: hidden;
+    }
+    .project_teaser img{
+        object-fit: cover;
+        height: 200px;
+        object-position: left;
+    }
+    /* for small screens make teaser full width */
+    @media only screen and (max-width: 600px) {
+        .project_teaser{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+</style>
 
 <div class="{{ include.type | default: "list" }}__item" >
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item " itemscope itemtype="http://schema.org/CreativeWork">
     
     {% if teaser %}
-    <div class="archive__item-teaser" style="float: left;width: 40%;margin-right: 20px; overflow: hidden;">
+    <div class="archive__item-teaser project_teaser">
         <img src=
           {% if teaser contains "://" %}
             "{{ teaser }}"
           {% else %}
             "{{ teaser | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
-          alt="" style="object-fit: cover;height: 200px;    object-position: left;">
+          alt="">
       </div>
     {% endif %}
     <div style="float: right;">
