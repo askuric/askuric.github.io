@@ -5,10 +5,14 @@ permalink: /portfolio/
 author_profile: true
 ---
 
+These are some of my open-source projects. You can find more on my <u><a href="https://github.com/askuric">GitHub</a></u>.
+
+
 {% include base_path %}
 
-
+<div style="width: 100%;display: inline-grid;">
 {% for post in site.portfolio %}
-  {% include archive-single.html %}
+  {% include archive-project.html type='list' %}
 {% endfor %}
+</div>
 

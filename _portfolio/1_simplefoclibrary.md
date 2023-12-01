@@ -1,22 +1,29 @@
 ---
 title: "*Simple<b>FOC</b>library*"
-excerpt: "![Library Compile](https://github.com/simplefoc/Arduino-FOC/workflows/Library%20Compile/badge.svg)
+badges: "![Library Compile](https://github.com/simplefoc/Arduino-FOC/workflows/Library%20Compile/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![arduino-library-badge](https://www.ardu-badge.com/badge/Simple%20FOC.svg?)](https://www.ardu-badge.com/badge/Simple%20FOC.svg) <br> This is a cross-platform arduino library implementing the Field Oriented Control (FOC) algorithm for BLDC and Stepper motors.   <br/><img src='https://docs.simplefoc.com/extras/Images/connection.gif' style='max-height:300px'>"
+[![arduino-library-badge](https://www.ardu-badge.com/badge/Simple%20FOC.svg?)](https://www.ardu-badge.com/badge/Simple%20FOC.svg)'"
+excerpt: "This is a cross-platform arduino library implementing the Field Oriented Control (FOC) algorithm for BLDC and Stepper motors. "
+teaser: "https://docs.simplefoc.com/extras/Images/connection.gif"
 collection: portfolio
+stars: "https://img.shields.io/github/stars/simplefoc/Arduino-FOC?style=social"
 ---
+
+<div style="width:100%;display:inline-flex;justify-content:space-between">
 <a href="https://simplefoc.com"> <i class="fa fa-home"></i> Home</a>
-<a href="https://github.com/simplefoc/Arduino-FOC"> <i class="fab fa-gitlab"></i> Github</a>
+<a href="https://github.com/simplefoc/Arduino-FOC"> <i class="fab fa-github"></i> Github</a>
 <a href="https://docs.simplefoc.com/"> <i class="fa fa-copy"></i> Documentation</a>
 <a href="https://community.simplefoc.com/"> <i class="fab fa-discourse"></i> Community </a>
-<a href="https://www.youtube.com/channel/UC72nYRXqdAtYjgDeH8rRJqg"> <i class="fab fa-youtube"></i> YouTube </a>
-
+<a href="https://www.youtube.com/channel/UC72nYRXqdAtYjgDeH8rRJqg"> <i class="fab fa-youtube"></i> YouTube </a></div>
 
 ![Library Compile](https://github.com/simplefoc/Arduino-FOC/workflows/Library%20Compile/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![arduino-library-badge](https://www.ardu-badge.com/badge/Simple%20FOC.svg?)](https://www.ardu-badge.com/badge/Simple%20FOC.svg)
 
+
 [![](https://github-readme-stats.vercel.app/api/pin/?username=simplefoc&repo=arduino-foc)](https://github.com/simplefoc/Arduino-FOC)
+
+# Simple Field Oriented Control (FOC) library
 
 We live in very exciting times 😃! BLDC motors are entering the hobby community more and more and many great projects have already emerged leveraging their far superior dynamics and power capabilities. BLDC motors have numerous advantages over regular DC motors but they have one big disadvantage, the complexity of control. Even though it has become relatively easy to design and manufacture PCBs and create our own hardware solutions for driving BLDC motors the proper low-cost solutions are yet to come. One of the reasons for this is the apparent complexity of writing the BLDC driving algorithms, Field oriented control (FOC) being an example of one of the most efficient ones.
 The solutions that can be found on-line are almost exclusively very specific for certain hardware configuration and the microcontroller architecture used.

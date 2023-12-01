@@ -1,7 +1,9 @@
 ---
 title: "*SimpleFOCBalancer*"
-excerpt: "Modular Arduino two wheel balancing robot based on gimbal BLDC motors and <i>Simple<b>FOC</b>library</i>.   <br/><img src='https://github.com/simplefoc/Arduino-FOC-balancer/raw/main/images/balancer_three.jpg' style='max-height:300px'>"
+excerpt: "Modular Arduino two wheel balancing robot based on gimbal BLDC motors and <i>Simple<b>FOC</b>library</i>."
+teaser: 'https://github.com/simplefoc/Arduino-FOC-balancer/raw/main/images/balancer_three.jpg'
 collection: portfolio
+stars: "https://img.shields.io/github/stars/simplefoc/Arduino-FOC-balancer?style=social"
 ---
 
 

@@ -1,9 +1,10 @@
 ---
 title: "Reaction wheel inverted pendulum"
-excerpt: "
-![Test Compile](https://github.com/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum/workflows/Library%20Compile/badge.svg)
-<br>This is an open-source project of designing and controlling the reaction wheel inverted pendulum based entirely on Arduino <i>Simple<b>FOC</b>library</i> and <i>Simple<b>FOC</b>shield</i>.   <br/><img src='https://github.com/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum/raw/master/images/swing-up.gif' style='max-height:300px'>"
+badges: "[![Test Compile](https://github.com/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum/actions/workflows/c-cpp.yml)"
+excerpt: "This is an open-source project of designing and controlling the reaction wheel inverted pendulum based entirely on Arduino <i>Simple<b>FOC</b>library</i> and <i>Simple<b>FOC</b>shield</i>."
+teaser: 'https://github.com/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum/raw/master/images/swing-up.gif'
 collection: portfolio
+stars: "https://img.shields.io/github/stars/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum?style=social"
 ---
 
 
@@ -11,7 +12,7 @@ collection: portfolio
 <a href="https://docs.simplefoc.com/simplefoc_pendulum"> <i class="fa fa-code"></i> Coding guide</a>
 
 
-![Test Compile](https://github.com/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum/workflows/Library%20Compile/badge.svg)
+[![Test Compile](https://github.com/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum/actions/workflows/c-cpp.yml)
 
 [![](https://github-readme-stats.vercel.app/api/pin/?username=simplefoc&repo=Arduino-FOC-reaction-wheel-inverted-pendulum)](https://github.com/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum)
 
