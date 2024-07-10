@@ -6,8 +6,8 @@ main:
   - title: "Publications"
     url: /publications/
     
-  - title: "Open-Source Projects"
-    url: /portfolio/
+#  - title: "Open-Source Projects"
+#    url: /portfolio/
     
   - title: "CV"
     url: /cv/
