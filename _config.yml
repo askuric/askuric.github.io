@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Antun Skuric"
+title                    : "Antoine Muller"
 title_separator          : "-"
-name                     : &name "Antun Skuric"
-description              : &description "PhD student"
-url                      : https://askuric.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Antoine Muller"
+description              : &description "Associate Professor"
+url                      : https://anmuller.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "askuric/askuric.github.io"
+repository               : "anmuller/anmuller.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Antun Skuric"
-  avatar           : "photo4.jpg"
-  bio              : "PhD in human-robot interaction"
-  location         : "Bordeaux, France"
-  employer         : "INRIA Bordeaux, Team AUCTUS"
+  name             : "Antoine Muller"
+  avatar           : "profile.png"
+  bio              : "Bio"
+  location         : "Lyon, France"
+  employer         : "Université Lyon 1"
   pubmed           :  
-  googlescholar    : "https://scholar.google.com/citations?user=z8aPXUoAAAAJ&hl=en"
-  email            : "antun.skuric@outlook.com"
+  googlescholar    : "https://scholar.google.com/citations?user=6cl2hC4AAAAJ&hl=fr&oi=sra"
+  email            : "antoine.muller@univ-lyon1.fr"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,14 +96,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "askuric"
+  github           : "anmuller"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "antun-skuric-63529291"
-  orcid            : "https://orcid.org/0000-0002-3323-4482"
+  linkedin         : "antoine-muller-ab5a2b1a7"
+  orcid            : "https://orcid.org/0000-0003-2606-1429"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
