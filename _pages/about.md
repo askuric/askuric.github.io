@@ -20,6 +20,6 @@ Recently, I'm shifting my interests towards understanding different impacts of t
 <b style="margin-bottom:0px">On a more practical note:</b> <br>
 My favorite way of learning is by hands-on experimenting and creating educational projects which enable me to test and improve my knowledge (embedded systems, mechanics, electronics, control theory, user interaction, ...) at the same time. When they go well, I really enjoy documenting and sharing them in a form of the open-source projects, making them available to the wider community. Even making an occasional Youtube video 😃.  
 
-One of these projects that I am particularly of is the [*Simple**FOC**library*](/portfolio/1_simplefoclibrary), which aims to demystify the Field oriented control for the Arduino community. The project has exceeded all my expectations both in terms of community interest (more than 1000 members) and involvement (30+ contributors). [Find out more ](https://simplefoc.com)
+One of these projects that I am particularly proud of is the [*Simple**FOC**library*](/portfolio/1_simplefoclibrary), which aims to demystify the Field oriented control for the Arduino community. The project has exceeded all my expectations both in terms of community interest (more than 1000 members) and involvement (30+ contributors). [Find out more ](https://simplefoc.com)
 
 Feel free to contact me if you have any questions or share some of the same interests. I'd be happy to hear from you!
