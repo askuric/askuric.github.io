@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Antun Skuric"
   avatar           : "photo4.jpg"
-  bio              : "PhD in human-robot interaction"
+  bio              : "Mechatronics engineer with a PhD in robotics"
   location         : "Bordeaux, France"
-  employer         : "INRIA Bordeaux, Team AUCTUS"
+  employer         : #"INRIA Bordeaux, Team AUCTUS"
   pubmed           :  
   googlescholar    : "https://scholar.google.com/citations?user=z8aPXUoAAAAJ&hl=en"
   email            : "antun.skuric@outlook.com"
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "antun-skuric-63529291"
+  linkedin         : #"antun-skuric-63529291"
   orcid            : "https://orcid.org/0000-0002-3323-4482"
   pinterest        :
   soundcloud       :
