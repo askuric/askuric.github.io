@@ -7,6 +7,7 @@ excerpt: "This is a cross-platform arduino library implementing the Field Orient
 teaser: "https://docs.simplefoc.com/extras/Images/connection.gif"
 collection: portfolio
 stars: "https://img.shields.io/github/stars/simplefoc/Arduino-FOC?style=social"
+type: "software"
 ---
 
 <div style="width:100%;display:inline-flex;justify-content:space-between">

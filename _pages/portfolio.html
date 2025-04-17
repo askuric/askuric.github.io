@@ -10,9 +10,29 @@ These are some of my open-source projects. You can find more on my <u><a href="h
 
 {% include base_path %}
 
+<h2> Software projects </h2>
 <div style="width: 100%;display: inline-grid;">
 {% for post in site.portfolio %}
-  {% include archive-project.html type='list' %}
+  {% if post.type == 'software' %}
+    {% include archive-project.html type='list' %}
+  {% endif %}
 {% endfor %}
 </div>
 
+<h2> Electronics projects </h2>
+<div style="width: 100%;display: inline-grid;">
+{% for post in site.portfolio %}
+  {% if post.type == 'electronics' %}
+    {% include archive-project.html type='list' %}
+  {% endif %}
+{% endfor %}
+</div>
+
+<h2> Mechatronics projects </h2>
+<div style="width: 100%;display: inline-grid;">
+{% for post in site.portfolio %}
+  {% if post.type == 'mechatronics' %}
+    {% include archive-project.html type='list' %}
+  {% endif %}
+{% endfor %}
+</div>

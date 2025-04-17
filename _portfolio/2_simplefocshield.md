@@ -4,6 +4,7 @@ excerpt: "This is an open-source low-cost Brushless DC (BLDC) motor driver board
 teaser: "https://github.com/simplefoc/Arduino-SimpleFOCShield/raw/master/images/top.png"
 collection: portfolio
 stars: "https://img.shields.io/github/stars/simplefoc/Arduino-SimpleFOCShield?style=social"
+type: "electronics"
 ---
 
 <a href="https://github.com/simplefoc/Arduino-SimpleFOCShield"> <i class="fab fa-github"></i> Github</a>

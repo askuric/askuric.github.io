@@ -5,6 +5,7 @@ excerpt: "This is an open-source project of designing and controlling the reacti
 teaser: 'https://github.com/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum/raw/master/images/swing-up.gif'
 collection: portfolio
 stars: "https://img.shields.io/github/stars/simplefoc/Arduino-FOC-reaction-wheel-inverted-pendulum?style=social"
+type: "mechatronics"
 ---
 
 

@@ -4,6 +4,7 @@ excerpt: "A python pip package for parsing witmotion IMU bwt901cl"
 teaser: "https://github.com/askuric/pywitmotion/raw/main/datasheet/image.jpg"
 collection: portfolio
 stars: 'https://img.shields.io/github/stars/askuric/pywitmotion?style=social'
+type: "software"
 ---
 
 {% include base_path %}
