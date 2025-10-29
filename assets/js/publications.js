@@ -43,7 +43,7 @@ function load_data_from_hall(url, id_div, id_num){
     })
 }
 
-querry = "authIdHal_s:antun-skuric"
+querry = "antun+skuric"
 // current year
 year = new Date().getFullYear()
 // journal papers
