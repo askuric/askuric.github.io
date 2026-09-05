@@ -10,7 +10,8 @@ You can also find my articles on <u><a href="https://scholar.google.com/citation
 
 <h2 style="margin-top: 20px;"> Featured Articles</h2>
 <div style="width: 100%;display: inline-block;">
-{% for post in site.publications reversed %}
+{% assign reversed_publications = site.publications | reverse %}    
+{% for post in reversed_publications limit:4 %}
   {% include archive-paper.html type='grid' %}
 {% endfor %}
 </div>

@@ -84,7 +84,7 @@ author:
   avatar           : "Antun_pollen.jpg"
   bio              : "PhD in human-centered robotics"
   location         : "Zurich, CH"
-  employer         : "Hugging Face <img src=\"/images/hf-logo.png\" alt=\"Hugging Face\" style=\"height:25px;width:auto\"/>"
+  employer         : "HF  <img src=\"/images/hf-logo.png\" alt=\"Hugging Face\" style=\"height:25px;width:auto\"/>,<img src=\"/images/ethz.png\" alt=\"ethz\" style=\"height:18px;width:auto;margin-bottom:-8px\"/>"
   pubmed           :  
   googlescholar    : "https://scholar.google.com/citations?user=z8aPXUoAAAAJ&hl=en"
   email            : "antun.skuric@outlook.com"
